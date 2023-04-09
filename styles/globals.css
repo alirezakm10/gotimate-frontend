@@ -1,0 +1,38 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+background-color: #fafafa;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* it's for accordions soft open and close animation */
+.accordion_content{
+  transition: height 500ms;
+}
+
+
+.hero-pic{
+  @apply bg-[url('/hero.jpg')] bg-no-repeat bg-cover
+}
