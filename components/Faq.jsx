@@ -30,7 +30,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="relative my-[100px] p-10">
+    <section className="relative my-[100px] py-4 z-[1]">
       {/* top right illustration */}
       <div className="absolute top-[0px] left-[0px] ">
         <svg

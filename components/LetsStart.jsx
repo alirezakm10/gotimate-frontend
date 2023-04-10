@@ -1,8 +1,10 @@
 import React from "react";
+import Image from 'next/image'
+import trapezium from '../public/trapezium.svg'
 
 const LetsStart = () => {
   return (
-    <section className="relative my-[100px] p-10">
+    <section className="relative my-[100px] py-10">
         {/* bottom left illustration */}
       <div className="absolute bottom-[0px] left-[0px]">
         <svg
@@ -427,18 +429,23 @@ const LetsStart = () => {
       </div>
 
 
-      <section className="flex flex-col md:flex-row my-9 bg-white shadow-md rounded-[50px] relative ">
-        <div className="p-10 leading-8 flex flex-col justify-center">
-          <h1 className="text-3xl">Let's Start</h1>
-          <p className="text-gray-500 leading-8 ">
+      <section className="relative flex flex-col md:flex-row md:justify-between my-9 min-h-[245px] h-[245px] max-h-[245px]   bg-white shadow-md rounded-[50px] md:rounded-[90px] ">
+        <div className="md:p-4 md:leading-8  text-center md:text-left flex flex-1 flex-col justify-center">
+          <h1 className="  text-3xl">Let's Start</h1>
+          <p className="text-gray-500 leading-8 w-[250px] md:w-auto">
             Lorem ipsum dolor sit amet, labore et dolore magna aliqua.Lorem
             ipsum dolor sit amet, labore et dolore magna aliqua.
           </p>
         </div>
-        <div className=" rounded-tl-[30px] rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px]  md:rounded-bl-[100px] bg-cyan-800 rounded w-[100%] h-[200px] md:w-1/3 flex justify-center items-center gap-7 ">
+
+
+        <div className="bg-[#05697E] flex flex-1 h-[100px] md:bg-transparent rounded-[30px] ">
+         <Image src={trapezium} responsive  className='absolute top-0  right-0 hidden md:block object-fill' />
+         {/* these same buttons is for desktop breakpoints */}
+          <div className=" absolute right-[100px] top-[95px] hidden md:flex gap-3  z-[1]" >
           <button
             type="button"
-            class="text-white text-[16px] flex items-center gap-3  hover:border hover:border-white rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            class="text-white text-[16px] flex items-center gap-3   hover:text-teal-500 rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
             Learn About
             <svg
@@ -463,6 +470,37 @@ const LetsStart = () => {
           >
             Sign up
           </button>
+          </div>
+          {/* these buttons is for mobile break point */}
+          <div className="flex md:hidden justify-center items-center w-full " >
+          <button
+            type="button"
+            class="text-white text-[16px] flex items-center gap-3  hover:border hover:border-white rounded-3xl transition-all  font-light  text-sm  text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+          >
+            Learn About
+            <svg
+              width="7"
+              height="11"
+              viewBox="0 0 7 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.625 1.125L6 5.5L1.625 9.875"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            className="text-[#1F2D3D] text-[16px] w-[153px] h-[30px]  bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-3xl text-sm text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+          >
+            Sign up
+          </button>
+          </div>
         </div>
       </section>
     </section>

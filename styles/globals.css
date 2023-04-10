@@ -5,21 +5,13 @@
 
 
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 
 body {
 background-color: #fafafa;
 }
+
+
 
 a {
   color: inherit;
@@ -35,4 +27,16 @@ a {
 
 .hero-pic{
   @apply bg-[url('/hero.jpg')] bg-no-repeat bg-cover
+}
+
+.trapezium {
+  @apply bg-[url('/trapezium.svg')] bg-no-repeat bg-right-top bg-cover
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .hero-illustration {
+    
+    @apply bg-[url('/hero-illustration.svg')] bg-no-repeat bg-right-top bg-auto rounded-3xl
+  }
 }

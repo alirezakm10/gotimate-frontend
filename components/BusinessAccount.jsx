@@ -4,6 +4,23 @@ import teamwork from '../public/teamwork.jpg'
 
 const BusinessAccount = () => {
   return (
+    <section className="relative my-[100px] py-1" >
+{/* top right illustration */}
+<div className="absolute bottom-[-70px] right-[-30px] ">
+     
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.1" clip-path="url(#clip0_93_2057)">
+<path d="M0 61.3553L0 110H48.8745L48.8745 61.3553L0 61.3553Z" fill="#637381"/>
+<path opacity="0.5" d="M0 5.34058e-05L0 48.6448L48.8745 48.6448L48.8745 5.34058e-05L0 5.34058e-05Z" fill="#637381"/>
+<path d="M61.1255 5.34058e-05L61.1255 48.6448L110 48.6448V5.34058e-05L61.1255 5.34058e-05Z" fill="#637381"/>
+</g>
+<defs>
+<clipPath id="clip0_93_2057">
+<rect width="110" height="110" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+      </div>
     <section className="flex flex-col md:flex-row h-auto gap-3">
       <div className="flex flex-col gap-[30px]">
         <h1 className="text-5xl py-8 font-bold">Own a business ?</h1>
@@ -53,6 +70,7 @@ const BusinessAccount = () => {
       <div className="realtive overflow-hidden md:w-1/2 rounded-tl-[80px] rounded-br-[80px]">
         <Image src={teamwork} layout='responsive' width='100' height='100' />
       </div>
+    </section>
     </section>
   );
 };

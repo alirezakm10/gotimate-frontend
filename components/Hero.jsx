@@ -2,10 +2,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col  py-9 relative">
-      <section className="flex flex-col gap-5">
+    <div className="flex flex-col  relative md:z-[1] 
+    ">  
+       {/* place of dotted illustration */}
+  
+      <section className="flex flex-col justify-center gap-5 relative hero-illustration h-[500px] ">
         <h1 className="text-5xl font-bold">Earn easy money!</h1>
-        <p className="text-gray-500 py-4 w-1/2">
+        <p className="text-gray-500 py-4 md:w-1/2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
@@ -41,7 +44,7 @@ const Hero = () => {
       </section>
 
       {/* cards container */}
-      <section className="bg-gray-600 rounded-3xl h-auto p-8 md:flex items-center md:h-[350px] hero-pic ">
+      <section className="bg-gray-600  rounded-3xl h-auto p-8 md:flex items-center md:h-[350px] hero-pic ">
         {/* card */}
         <div className="flex flex-col mb-10">
           <h1 className="text-blue-500 text-4xl font-bold ">01</h1>
