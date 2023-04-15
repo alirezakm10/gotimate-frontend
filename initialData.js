@@ -16,17 +16,24 @@
             {
                 num:1,
                 title:'Create Account',
-                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                arrow: <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.125 10.625L34 25.5L19.125 40.375" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             },
             {
                 num:2,
                 title:'Charge Wallet',
-                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                arrow: <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.125 10.625L34 25.5L19.125 40.375" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                 
             },
             {
                 num:3,
                 title:'Good to go',
-                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
+                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
+                arrow:null              
             }
         ]
     },
@@ -54,7 +61,7 @@
         },
         {
         question:'Witch Lorem ipsum dolor sit amet a part ?',
-        answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        answer:'Lorem ipsum dolor sit amet, consectdfstgetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         }
     ]
     },

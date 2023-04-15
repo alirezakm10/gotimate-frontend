@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className=" relative overflow-hiddenflex flex-col items-center">
       <hr class="h-px w-[100%] bg-gray-200 border-0 my-[46px]  dark:bg-gray-700" />
       <section className="flex flex-col items-center md:items-start md:flex-row py-6 gap-[100px]">
         {/* section one */}

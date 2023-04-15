@@ -4,7 +4,7 @@ import trapezium from '../public/trapezium.svg'
 
 const LetsStart = () => {
   return (
-    <section className="relative my-[100px] py-10">
+    <section className="relative overflow-hidden my-[100px] py-10">
         {/* bottom left illustration */}
       <div className="absolute bottom-[0px] left-[-61px] ">
         <svg
@@ -445,7 +445,7 @@ const LetsStart = () => {
           <div className=" absolute right-[90px] top-[78px] hidden md:flex gap-3  z-[1]" >
           <button
             type="button"
-            class="text-white text-[16px] flex items-center gap-3   hover:text-[#1F2D3D] rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            class="text-white stroke-white text-[16px] flex items-center gap-3   hover:text-[#1F2D3D] hover:stroke-[#1F2D3D] rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
             How to start
             <svg
@@ -457,7 +457,7 @@ const LetsStart = () => {
             >
               <path
                 d="M1.625 1.125L6 5.5L1.625 9.875"
-                stroke="#fff"
+                stroke="inherit"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -466,7 +466,7 @@ const LetsStart = () => {
           </button>
           <button
             type="button"
-            className="text-[#1F2D3D] text-[16px] w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-[2rem] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-[#1F2D3D] text-medium w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-semibold rounded-[2rem] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
             Let's start
           </button>
@@ -475,7 +475,7 @@ const LetsStart = () => {
           <div className="flex bg-gotimate md:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]" >
           <button
             type="button"
-            class="text-white text-[16px] flex items-center gap-3   hover:text-[#1F2D3D] rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            class="text-white flex items-center gap-3   hover:text-dimgot rounded-3xl transition-all  font-semibold  text-medium px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
             How to start
             <svg

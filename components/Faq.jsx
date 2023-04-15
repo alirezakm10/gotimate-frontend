@@ -13,7 +13,7 @@ const Faq = () => {
   const accordionData = [
     {
       title: "Lorem ipsum dolor sit amet ?",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      desc: "Lorem ipsum dolor sit amet, cxbcvxbhxbhxghdghhfdfdssdsdghghdghconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       title: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet?",
@@ -30,7 +30,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="relative my-[100px] py-4 z-[1]">
+    <section className="relative overflow-hidden my-[100px] py-4 z-[1]">
       {/* top right illustration */}
       <div className="absolute top-[0px] left-[-61px] ">
         <svg
@@ -80,7 +80,7 @@ const Faq = () => {
           </p>
           <button
             type="button"
-            class="text-black flex items-center gap-3  hover:text-cyan-800 transition-all  font-medium rounded-lg text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            class="text-black stroke-darkgot hover:stroke-gotimate flex items-center gap-3  hover:text-gotimate transition-all  font-medium rounded-lg text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
             More questions
             <svg
@@ -92,7 +92,7 @@ const Faq = () => {
             >
               <path
                 d="M1.625 1.125L6 5.5L1.625 9.875"
-                stroke="#637381"
+                stroke="inherit"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
