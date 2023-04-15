@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,10 +16,20 @@ module.exports = {
       },
     },
     extend: {
+   
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      }
+      },
+      colors: {
+        'gotimate': '#05697E',
+        'bluegot':'#00ACCF',
+        'darkgot':'#1F2D3D',
+        'dimgot':'#637381'
+      },
     },
+    fontFamily: {
+      ageo: ["ageoregular","ageobold","ageolight"]
+    }
   },
   plugins: [],
 }

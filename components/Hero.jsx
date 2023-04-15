@@ -1,29 +1,41 @@
 import React from "react";
+import { initialData } from "@/initialData";
+import Link from 'next/link'
 
 const Hero = () => {
+  const { hero } = initialData
+
+  console.log('this is hero header guids: ', hero.userGuid[0])
   return (
-    <div className="flex flex-col  relative md:z-[1] 
+    <div className="flex flex-col md:z-[1]
     ">  
        {/* place of dotted illustration */}
+
+       <div className="absolute top-[100px] right-[190px] w-[300px] h-[300px] sky-gradient" ></div>
+       <div className="absolute top-[250px] right-[250px] w-[300px] h-[300px] purple-gradient" ></div>
+       <div className="absolute top-[150px] right-[150px] w-[300px] h-[300px] hero-illustration" ></div>
   
-      <section className="flex flex-col justify-center gap-5 relative hero-illustration h-[500px] ">
-        <h1 className="text-5xl font-bold">Earn easy money!</h1>
+
+      <section className="flex flex-col justify-center gap-5 relative  h-[500px] ">
+        <h1 className="text-5xl text-[#1F2D3D]  font-bold">{hero.title}</h1>
         <p className="text-gray-500 py-4 md:w-1/2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          {hero.content}
         </p>
         <div className="flex gap-2 my-6">
+          <Link href={hero.buttons[0].url} >
           <button
             type="button"
-            class="text-white w-[162px] h-[57px] bg-cyan-800 hover:bg-gray-400 transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-white w-[162px] h-[57px] bg-cyan-800 hover:bg-gray-400 transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Start Here
+            {hero.buttons[0].title}
           </button>
+          </Link>
+          <Link href={hero.buttons[1].url} >
           <button
             type="button"
-            class="w-[162px] h-[57px] text-black flex items-center gap-3  hover:text-cyan-800 transition-all  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="w-[162px] h-[57px] text-[#1F2D3D] flex items-center gap-3  hover:text-cyan-800 transition-all  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Learn About
+            {hero.buttons[1].title}
             <svg
               width="7"
               height="11"
@@ -40,40 +52,32 @@ const Hero = () => {
               />
             </svg>
           </button>
+          </Link>
         </div>
       </section>
 
       {/* cards container */}
-      <section className="bg-gray-600  rounded-3xl h-auto p-8 md:flex items-center md:h-[350px] hero-pic ">
+      <section className="rounded-3xl h-auto p-8 md:flex items-center md:h-[350px] hero-pic ">
+        
+        
         {/* card */}
-        <div className="flex flex-col mb-10">
-          <h1 className="text-blue-500 text-4xl font-bold ">01</h1>
-          <h2 className="text-white text-2xl my-2">Create Account</h2>
-          <p className="text-gray-200 leading-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
-        </div>
+        {hero.userGuid.map((card, i) => (
+        <div className="flex flex-col brightness-125 saturate-100 mb-10 md:mb-0">
+          <h1 className="text-bluegot text-4xl font-bold ">{card.num}</h1>
+          <div className="relative" >
+          <h2 className="text-white text-2xl my-2">{card.title}</h2>
+            <span className="absolute hidden md:block right-10 top-0" >
+            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.125 10.625L34 25.5L19.125 40.375" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
-        {/* card */}
-        <div className="flex flex-col mb-10">
-          <h1 className="text-blue-500 text-4xl font-bold ">02</h1>
-          <h2 className="text-white text-2xl my-2">Create Account</h2>
-          <p className="text-gray-200 leading-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
+            </span>
+          </div>
+          <p className="text-gray-200 leading-8 w-[65%]">{card.content}</p>
         </div>
+        ))}
 
-        {/* card */}
-        <div className="flex flex-col mb-10">
-          <h1 className="text-blue-500 text-4xl font-bold ">03</h1>
-          <h2 className="text-white text-2xl my-2">Create Account</h2>
-          <p className="text-gray-200 leading-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
-        </div>
+ 
       </section>
     </div>
   );

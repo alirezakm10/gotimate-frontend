@@ -1,12 +1,16 @@
- export const initialData = [
+ export const initialData = {
     // hero header data object
-    {
-        title:'Earn easy money!',
+   hero: {
+        title:'Your experiences are valuable !',
         content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         buttons:[{
+            title:'Start Here',
+            icon:null,
+            url:'/contact'
+        },{
             title:'Learn About',
             icon: null,
-            url: null
+            url: '/dg'
         }],
         userGuid:[
             {
@@ -15,19 +19,19 @@
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
             },
             {
-                num:1,
+                num:2,
                 title:'Charge Wallet',
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
             },
             {
-                num:1,
+                num:3,
                 title:'Good to go',
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
             }
         ]
     },
     // faq data object
-    {
+   faq: {
         question:'',
         answer:'',
         buttons:[{
@@ -55,7 +59,7 @@
     ]
     },
     // let's Start data object
-    {
+   letsstart: {
         title:'Lets Start',
         content:'Lorem ipsum dolor sit amet, labore et dolore magna aliqua.Lorem ipsum dolor sit amet, labore et dolore magna aliqua.',
         buttons:[{
@@ -72,7 +76,7 @@
 
     },
     // Business Account data object
-    {
+   bussiness: {
         question:'Own a business ?',
         subTitle:'Create A business Account with 0$',
         answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do agna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -91,7 +95,7 @@
         }
     },
     // footer data object
-    {
+   footer: {
         logoObj: {
             src:null,
             alt:null,
@@ -159,4 +163,4 @@
         
     },
 
-]
+}

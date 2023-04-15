@@ -32,7 +32,7 @@ const Faq = () => {
   return (
     <section className="relative my-[100px] py-4 z-[1]">
       {/* top right illustration */}
-      <div className="absolute top-[0px] left-[0px] ">
+      <div className="absolute top-[0px] left-[-61px] ">
         <svg
           width="110"
           height="110"
@@ -71,7 +71,7 @@ const Faq = () => {
       <section className="flex flex-col md:flex-row h-auto gap-2 relative overflow-hidden items-start  ">
         {/* start of faq details */}
         <div className="md:w-1/2">
-          <h1 className="text-5xl py-8 font-bold">Got Question ?</h1>
+          <h1 className="text-6xl text-[#1F2D3D] py-8 font-bold">Got < br /> Question ?</h1>
           <p className="text-gray-500 py-4 leading-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -82,7 +82,7 @@ const Faq = () => {
             type="button"
             class="text-black flex items-center gap-3  hover:text-cyan-800 transition-all  font-medium rounded-lg text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Learn About
+            More questions
             <svg
               width="7"
               height="11"

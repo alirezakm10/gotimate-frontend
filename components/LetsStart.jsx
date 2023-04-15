@@ -6,7 +6,7 @@ const LetsStart = () => {
   return (
     <section className="relative my-[100px] py-10">
         {/* bottom left illustration */}
-      <div className="absolute bottom-[0px] left-[0px]">
+      <div className="absolute bottom-[0px] left-[-61px] ">
         <svg
           width="105"
           height="105"
@@ -42,7 +42,7 @@ const LetsStart = () => {
         </svg>
       </div>
 {/* top right illustration */}
-      <div className="absolute top-[0px] right-[0px] ">
+      <div className="absolute top-[0px] right-[-61px] ">
         <svg
           width="166"
           height="146"
@@ -429,25 +429,25 @@ const LetsStart = () => {
       </div>
 
 
-      <section className="relative flex flex-col md:flex-row md:justify-between my-9 min-h-[245px] h-[245px] max-h-[245px]   bg-white shadow-md rounded-[50px] md:rounded-[90px] ">
-        <div className="md:p-4 md:leading-8  text-center md:text-left flex flex-1 flex-col justify-center">
-          <h1 className="  text-3xl">Let's Start</h1>
-          <p className="text-gray-500 leading-8 w-[250px] md:w-auto">
+      <section className="relative flex flex-col md:flex-row md:justify-between my-9 min-h-[211px]    bg-white shadow-md rounded-[50px] md:rounded-[75px] ">
+        <div className="md:px-[60px] py-6 md:leading-8  text-center md:text-left flex gap-5 flex-1 flex-col justify-center">
+          <h1 className="  text-3xl text-[#1F2D3D]">Let's Start</h1>
+          <p className="text-gray-500 px-2 leading-8 md:w-auto">
             Lorem ipsum dolor sit amet, labore et dolore magna aliqua.Lorem
             ipsum dolor sit amet, labore et dolore magna aliqua.
           </p>
         </div>
 
 
-        <div className="bg-[#05697E] flex flex-1 h-[100px] md:bg-transparent rounded-[30px] ">
+        <div className="flex flex-1 h-[100px] md:bg-transparent rounded-[30px] ">
          <Image src={trapezium} responsive  className='absolute top-0  right-0 hidden md:block object-fill' />
          {/* these same buttons is for desktop breakpoints */}
-          <div className=" absolute right-[100px] top-[95px] hidden md:flex gap-3  z-[1]" >
+          <div className=" absolute right-[90px] top-[78px] hidden md:flex gap-3  z-[1]" >
           <button
             type="button"
-            class="text-white text-[16px] flex items-center gap-3   hover:text-teal-500 rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            class="text-white text-[16px] flex items-center gap-3   hover:text-[#1F2D3D] rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Learn About
+            How to start
             <svg
               width="7"
               height="11"
@@ -466,18 +466,18 @@ const LetsStart = () => {
           </button>
           <button
             type="button"
-            className="text-[#1F2D3D] text-[16px] w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-[#1F2D3D] text-[16px] w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-[2rem] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Sign up
+            Let's start
           </button>
           </div>
           {/* these buttons is for mobile break point */}
-          <div className="flex md:hidden justify-center items-center w-full " >
+          <div className="flex bg-gotimate md:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]" >
           <button
             type="button"
-            class="text-white text-[16px] flex items-center gap-3  hover:border hover:border-white rounded-3xl transition-all  font-light  text-sm  text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            class="text-white text-[16px] flex items-center gap-3   hover:text-[#1F2D3D] rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Learn About
+            How to start
             <svg
               width="7"
               height="11"
@@ -496,9 +496,9 @@ const LetsStart = () => {
           </button>
           <button
             type="button"
-            className="text-[#1F2D3D] text-[16px] w-[153px] h-[30px]  bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-3xl text-sm text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-[#1F2D3D] text-[16px] w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-[2rem] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
           >
-            Sign up
+            Let's start
           </button>
           </div>
         </div>
