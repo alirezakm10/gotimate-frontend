@@ -16,18 +16,22 @@ const Navbar = () => {
         </a>
         <div className="md:order-2 ">
           <div className="hidden lg:flex">
+            <Link href='https://dashv1.gotimate.com' >
             <button
               type="button"
               className="text-darkgot text-[17px] w-[119px] h-[49px] hover:text-gotimate transition-all  font-medium rounded-[10px]"
             >
               Login
             </button>
+            </Link>
+            <Link href='https://dashv1.gotimate.com/signup' >
             <button
               type="button"
               className="text-white text-[17px] bg-gotimate w-[119px] h-[49px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[10px]"
             >
               Sign up
             </button>
+            </Link>
           </div>
 
           {/* hamburger menu logo and user icon in mobile mode */}
@@ -55,11 +59,8 @@ const Navbar = () => {
               </svg>
             </button>
          {logo}
-
-            <button
-              type="button"
-              className=" stroke-darkgot mr-10"
-            >
+            <Link href='https://dashv1.gotimate.com'  className="flex items-center stroke-darkgot mr-10" >
+        
               <svg
                 width="25"
                 height="25"
@@ -82,7 +83,7 @@ const Navbar = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
           {/* this div is for mobile nav items container */}
           <div
@@ -115,18 +116,22 @@ const Navbar = () => {
 
               {/* login signup buttons in mobile menu */}
               <div className="gap-2 flex mx-auto">
+                <Link href='https://dashv1.gotimate.com/signup' >
                 <button
                   type="button"
                   className="text-white text-[17px] bg-gotimate w-[119px] h-[49px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
                 >
                   Sign up
                 </button>
+                </Link>
+                <Link href='https://dashv1.gotimate.com' >
                 <button
                   type="button"
                   className="text-darkgot text-[17px] w-[119px] h-[49px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"
                 >
                   Login
                 </button>
+                </Link>
               </div>
 
               <ul className="MENU-LINK-MOBILE-OPEN text-lg font-light text-gray-800 flex flex-col gap-8 items-start justify-around min-h-[250px] w-full">
