@@ -62,7 +62,7 @@ const Faq = () => {
           </p>
           <button
             type="button"
-            className="flex gap-2 items-center text-darkgot text-[17px] w-[157px] h-[57px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
+            className="flex gap-2 items-center text-darkgot text-[14px] w-[157px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
           >
             {faq.buttons[0].title}
             <svg

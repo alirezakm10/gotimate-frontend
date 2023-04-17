@@ -6,7 +6,7 @@ const Footer = () => {
   const {logo, footer, socialNetworks } = initialData
   return (
     <section className=" relative overflow-hiddenflex flex-col items-center">
-      <hr className="h-px w-[100%] bg-gray-200 border-0 my-[46px]" />
+      <hr className="text-[14px]x w-[100%] bg-gray-200 border-0 my-[46px]" />
       <section className="flex-col md:flex items-center md:items-start md:flex-row py-6 gap-[100px]">
         {/* section one */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-5 ">
@@ -97,7 +97,7 @@ const Footer = () => {
             />
           </div>
             <button
-              className="bg-[#1F2D3D] hover:bg-cyan-800 w-[247px] h-[57px] rounded-[10px] transition-all  text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline"
+              className="bg-[#1F2D3D] hover:bg-cyan-800 w-[247px] h-[40px] rounded-[10px] transition-all  text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline"
               type="button"
             >
               {footer.subscribe.buttons[0].title}
@@ -130,7 +130,7 @@ const Footer = () => {
         </div>
      
       </section>
-      <hr className="h-px w-[100%] mt-[46px] bg-gray-200 border-0" />
+      <hr className="text-[14px]x w-[100%] mt-[46px] bg-gray-200 border-0" />
       <p className="text-center mt-4 text-gray-500 text-sm">
       { footer.copyright.sign && <>&copy; </>}
       {footer.copyright.title}

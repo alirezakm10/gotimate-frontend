@@ -29,7 +29,7 @@ const Hero = () => {
           <Link href={hero.buttons[0].url} >
           <button
             type="button"
-            className="text-white text-[17px] bg-gotimate w-[157px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
+            className="text-white text-[14px] bg-gotimate w-[119px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
           >
             {hero.buttons[0].title}
           </button>
@@ -37,7 +37,7 @@ const Hero = () => {
           <Link href={hero.buttons[1].url} >
           <button
             type="button"
-            className="flex gap-2 items-center text-darkgot text-[17px] w-[157px] h-[57px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
+            className="flex gap-2 items-center text-darkgot text-[14px] w-[119px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
           >
             {hero.buttons[1].title}
             <svg

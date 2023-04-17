@@ -52,7 +52,7 @@ const BusinessAccount = () => {
           <div className="hidden md:flex gap-5 justify-start">
             <button
               type="button"
-              className="flex items-center justify-center gap-4 px-5 text-white text-[17px] bg-gotimate w-[300px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+              className="flex items-center justify-center gap-4 px-5 text-white text-[14px] bg-gotimate w-[200px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
             >
               <svg
                 width="20"
@@ -71,7 +71,7 @@ const BusinessAccount = () => {
             </button>
             <button
               type="button"
-              className="flex items-center justify-around text-darkgot text-[17px]  w-auto h-[57px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+              className="flex items-center gap-3 p-2 justify-around text-darkgot text-[14px]  w-auto h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
             >
               {bussiness.buttons[1].title}
 
@@ -99,10 +99,10 @@ const BusinessAccount = () => {
         </div>
 
         {/* buttons container in mobile mode */}
-        <div className="flex md:hidden py-5 justify-around">
+        <div className="flex md:hidden gap-3 py-5 justify-around">
           <button
             type="button"
-            className="flex items-center justify-around  text-white text-[17px] bg-gotimate w-full h-[57px] p-2 hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+            className="flex items-center justify-around  text-white text-[14px] bg-gotimate w-[90%] h-[40px] p-2 hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
           >
             <svg
               width="20"
@@ -121,7 +121,7 @@ const BusinessAccount = () => {
           </button>
           <button
             type="button"
-            className="flex items-center justify-around text-darkgot text-[17px]  w-full h-[57px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+            className="flex items-center gap-3 justify-around text-darkgot text-[14px]  w-full h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
           >
             {bussiness.buttons[1].title}
 

@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link href='https://dashv1.gotimate.com' >
             <button
               type="button"
-              className="text-darkgot text-[17px] w-[119px] h-[49px] hover:text-gotimate transition-all  font-medium rounded-[10px]"
+              className="text-darkgot text-[14px] w-[100px] h-[40px] hover:text-gotimate transition-all rounded-[10px]"
             >
               Login
             </button>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link href='https://dashv1.gotimate.com/signup' >
             <button
               type="button"
-              className="text-white text-[17px] bg-gotimate w-[119px] h-[49px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[10px]"
+              className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
             >
               Sign up
             </button>
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <Link href='https://dashv1.gotimate.com/signup' >
                 <button
                   type="button"
-                  className="text-white text-[17px] bg-gotimate w-[119px] h-[49px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
+                  className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
                 >
                   Sign up
                 </button>
@@ -127,7 +127,7 @@ const Navbar = () => {
                 <Link href='https://dashv1.gotimate.com' >
                 <button
                   type="button"
-                  className="text-darkgot text-[17px] w-[119px] h-[49px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"
+                  className="text-darkgot text-[14px] w-[100px] h-[40px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"
                 >
                   Login
                 </button>

@@ -446,7 +446,7 @@ const LetsStart = () => {
           <div className=" absolute top-[78px] right-[100px] hidden lg:flex gap-3" >
           <button
             type="button"
-            className="flex gap-2 items-center text-white hover:bg-gray-400 px-3 text-[17px] w-[123px] h-[57px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
+            className="flex gap-2 items-center text-white hover:bg-gray-400 px-3 text-[14px] w-[123px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
           >
             {letsstart.buttons[0].title}
             <svg
@@ -467,7 +467,7 @@ const LetsStart = () => {
           </button>
           <button
             type="button"
-            className="text-darkgot text-[17px] hover:text-white bg-white w-[153px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
+            className="text-darkgot text-[14px] hover:text-white bg-white w-[153px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
           >
              {letsstart.buttons[1].title}
           </button>
@@ -476,11 +476,11 @@ const LetsStart = () => {
           <div className="flex gap-3 bg-gotimate lg:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]" >
           <button
             type="button"
-            className="text-darkgot text-[17px] bg-white w-[123px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
+            className="text-darkgot text-[14px] bg-white w-[123px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
           >{letsstart.buttons[0].title}</button>
           <button
             type="button"
-            className="flex gap-2 items-center text-white hover:bg-gray-400 px-1 text-[17px] w-[123px] h-[57px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
+            className="flex gap-2 items-center text-white hover:bg-gray-400 px-1 text-[14px] w-[123px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
           >
               {letsstart.buttons[1].title}
             <svg
