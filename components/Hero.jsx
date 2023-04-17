@@ -7,25 +7,29 @@ const Hero = () => {
 
   
   return (
-    <div className="flex flex-col md:z-[1]
-    ">  
+    <div className="flex flex-col">  
        {/* place of dotted illustration */}
 
-       <div className="absolute top-[100px] right-[190px] w-[300px] h-[300px] sky-gradient" ></div>
-       <div className="absolute top-[250px] right-[250px] w-[300px] h-[300px] purple-gradient" ></div>
-       <div className="absolute top-[150px] right-[150px] w-[300px] h-[300px] hero-illustration" ></div>
+       <div className="absolute md:top-[100px] right-[-300px] md:right-[100px] w-[300px] h-[300px] sky-gradient" ></div>
+       <div className="absolute top-[300px] md:top-[290px] right-[-300px] md:right-[250px] w-[300px] h-[300px] purple-gradient" ></div>
+       <div className="absolute md:top-[150px] md:right-[150px] w-[300px] h-[300px] hero-illustration" ></div>
   
 
-      <section className="flex flex-col justify-center gap-5 relative  h-[500px] ">
-        <h1 className="text-5xl text-[#1F2D3D]  font-bold">{hero.title}</h1>
+      <section className="flex flex-col justify-center gap-5 relative  h-[500px] ">      
+      <h1 className="text-5xl text-[#1F2D3D] font-bold ">
+      {hero.title}
+      </h1>
+      <h1 className="text-5xl text-[#1F2D3D] font-bold ">
+      {hero.breaktitle}
+      </h1>
         <p className="text-gray-500 py-4 md:w-1/2">
           {hero.content}
         </p>
-        <div className="flex gap-2 my-6">
+        <div className="flex gap-7 my-6">
           <Link href={hero.buttons[0].url} >
           <button
             type="button"
-            className="text-white w-[162px] h-[57px] bg-cyan-800 hover:bg-gray-400 transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-white text-[17px] bg-gotimate w-[157px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
           >
             {hero.buttons[0].title}
           </button>
@@ -33,7 +37,7 @@ const Hero = () => {
           <Link href={hero.buttons[1].url} >
           <button
             type="button"
-            className="w-[162px] h-[57px] text-darkgot stroke-darkgot hover:stroke-gotimate flex items-center gap-3  hover:text-cyan-800 transition-all  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="flex gap-2 items-center text-darkgot text-[17px] w-[157px] h-[57px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
           >
             {hero.buttons[1].title}
             <svg
@@ -46,9 +50,9 @@ const Hero = () => {
               <path
                 d="M1.625 1.125L6 5.5L1.625 9.875"
                 stroke="inherit"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

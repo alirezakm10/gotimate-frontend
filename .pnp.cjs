@@ -28,7 +28,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@next/font", "npm:13.3.0"],\
             ["@reduxjs/toolkit", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:1.9.3"],\
             ["autoprefixer", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:10.4.14"],\
             ["next", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:13.2.4"],\
@@ -67,15 +66,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@next-env-npm-13.2.4-fafa35e4a8-4123e08a79.zip/node_modules/@next/env/",\
           "packageDependencies": [\
             ["@next/env", "npm:13.2.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@next/font", [\
-        ["npm:13.3.0", {\
-          "packageLocation": "./.yarn/cache/@next-font-npm-13.3.0-28eebe470c-8b3ffee19a.zip/node_modules/@next/font/",\
-          "packageDependencies": [\
-            ["@next/font", "npm:13.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -964,7 +954,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["gotimate-frontend", "workspace:."],\
-            ["@next/font", "npm:13.3.0"],\
             ["@reduxjs/toolkit", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:1.9.3"],\
             ["autoprefixer", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:10.4.14"],\
             ["next", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:13.2.4"],\

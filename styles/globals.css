@@ -46,20 +46,22 @@ a {
 
 .sky-gradient {
 /* Created with https://www.css-gradient.com */
-background: rgba(66, 136, 216, 0.616);
-background: -webkit-radial-gradient(center, rgba(66, 136, 216, 0.616), rgb(255, 255, 255));
-background: -moz-radial-gradient(center, rgba(66, 136, 216, 0.616), rgb(255, 255, 255));
-background: radial-gradient(ellipse at center, rgba(66, 136, 216, 0.486), #fafafa);
+background: #01849e9b;
+background: -webkit-radial-gradient(ellipse at center, #01849e9b, #01849e0d);
+background: -moz-radial-gradient(ellipse at center, #01849e9b, #01849e0d);
+background: radial-gradient(ellipse at center, #01849e9b, #01849e04);
 border-radius: 50%;
-box-shadow: -1px 10px 500px rgba(66, 136, 216, 0.486);
+box-shadow: 0px 0px 800px #01849e9b;
 }
 
 .purple-gradient {
 /* Created with https://www.css-gradient.com */
-background:  rgba(198, 153, 216, 0.534);
-background: -webkit-radial-gradient(center,  rgba(198, 153, 216, 0.534), #fafafa);
-background: -moz-radial-gradient(center,  rgba(198, 153, 216, 0.534), #fafafa);
-background: radial-gradient(ellipse at center,  #9c70faa4, rgba(96, 217, 241, 0.062));
+background:  #9C70FA;
+background: -webkit-radial-gradient(ellipse at center,  #9c70fadb, #4a019e0d);
+background: -moz-radial-gradient(ellipse at center,  #9c70fadb, #4a019e0d);
+background: radial-gradient(ellipse at center,  #9c70fac5, #4a019e0d);
 border-radius: 50%;
-box-shadow: -1px 5px 500px #9c70faa4;
+box-shadow: 0px 0px 500px #9C70FA;
 }
+
+

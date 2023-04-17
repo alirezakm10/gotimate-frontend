@@ -1,10 +1,10 @@
 <svg width="274" height="242" viewBox="0 0 274 242" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.35" clip-path="url(#clip0_93_1801)">
+<g opacity="0.35" clipPath="url(#clip0_93_1801)">
 <path d="M204.789 211.818V242H235.113V211.818H204.789Z" fill="white"/>
 <path opacity="0.5" d="M204.789 173.749V203.931H235.113V173.749H204.789Z" fill="white"/>
 <path d="M242.715 173.749V203.931H273.039V173.749H242.715Z" fill="white"/>
 </g>
-<g opacity="0.4" clip-path="url(#clip1_93_1801)">
+<g opacity="0.4" clipPath="url(#clip1_93_1801)">
 <path d="M48.9355 22.2007L48.9355 0.577881L27.2106 0.577879L27.2106 22.2007L48.9355 22.2007Z" fill="white"/>
 <path opacity="0.5" d="M48.9355 49.4734L48.9355 27.8506L27.2106 27.8506L27.2106 49.4734L48.9355 49.4734Z" fill="white"/>
 <path d="M21.7651 49.4734L21.7651 27.8506L0.0402031 27.8506L0.0402012 49.4734L21.7651 49.4734Z" fill="white"/>
@@ -108,45 +108,45 @@
 <circle opacity="0.5" cx="173.243" cy="212.71" r="3.70974" fill="white"/>
 </g>
 <circle cx="83.2096" cy="79.0539" r="3.73699" fill="white"/>
-<circle cx="83.2096" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="83.2096" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="83.2096" cy="101.476" r="3.73699" fill="white"/>
-<circle cx="83.2096" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="83.2096" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="83.2096" cy="123.898" r="3.73699" fill="white"/>
-<circle cx="83.2096" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="83.2096" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="83.2096" cy="146.32" r="3.73699" fill="white"/>
-<circle cx="83.2096" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="83.2096" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="105.628" cy="79.0539" r="3.73699" fill="white"/>
-<circle cx="105.628" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="105.628" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="105.628" cy="101.476" r="3.73699" fill="white"/>
-<circle cx="105.628" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="105.628" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="105.628" cy="123.898" r="3.73699" fill="white"/>
-<circle cx="105.628" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="105.628" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="105.628" cy="146.32" r="3.73699" fill="white"/>
-<circle cx="105.628" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="105.628" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="128.051" cy="79.0539" r="3.73699" fill="white"/>
-<circle cx="128.051" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="128.051" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="128.051" cy="101.476" r="3.73699" fill="white"/>
-<circle cx="128.051" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="128.051" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="128.051" cy="123.898" r="3.73699" fill="white"/>
-<circle cx="128.051" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="128.051" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="128.051" cy="146.32" r="3.73699" fill="white"/>
-<circle cx="128.051" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="128.051" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="150.473" cy="79.0539" r="3.73699" fill="white"/>
-<circle cx="150.473" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="150.473" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="150.473" cy="101.476" r="3.73699" fill="white"/>
-<circle cx="150.473" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="150.473" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="150.473" cy="123.898" r="3.73699" fill="white"/>
-<circle cx="150.473" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="150.473" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="150.473" cy="146.32" r="3.73699" fill="white"/>
-<circle cx="150.473" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="150.473" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="172.897" cy="79.0539" r="3.73699" fill="white"/>
-<circle cx="172.897" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="172.897" cy="79.0539" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="172.897" cy="101.476" r="3.73699" fill="white"/>
-<circle cx="172.897" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="172.897" cy="101.476" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="172.897" cy="123.898" r="3.73699" fill="white"/>
-<circle cx="172.897" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="172.897" cy="123.898" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <circle cx="172.897" cy="146.32" r="3.73699" fill="white"/>
-<circle cx="172.897" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" stroke-width="5"/>
+<circle cx="172.897" cy="146.32" r="6.23699" stroke="white" stroke-opacity="0.05" strokeWidth="5"/>
 <defs>
 <clipPath id="clip0_93_1801">
 <rect width="68.25" height="68.25" fill="white" transform="translate(204.789 173.75)"/>

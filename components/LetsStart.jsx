@@ -1,8 +1,12 @@
 import React from "react";
 import Image from 'next/image'
 import trapezium from '../public/trapezium.svg'
+import { initialData } from "@/initialData";
 
 const LetsStart = () => {
+  const { letsstart } = initialData;
+
+  
   return (
     <section className="relative overflow-hidden my-[100px] py-10">
         {/* bottom left illustration */}
@@ -14,7 +18,7 @@ const LetsStart = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g opacity="0.1" clip-path="url(#clip0_30_1203)">
+          <g opacity="0.1" clipPath="url(#clip0_30_1203)">
             <path
               d="M46.2658 0.364992L0.274475 0.36499L0.274473 46.5736L46.2658 46.5736L46.2658 0.364992Z"
               fill="#637381"
@@ -429,25 +433,22 @@ const LetsStart = () => {
       </div>
 
 
-      <section className="relative flex flex-col md:flex-row md:justify-between my-9 min-h-[211px]    bg-white shadow-md rounded-[50px] md:rounded-[75px] ">
-        <div className="md:px-[60px] py-6 md:leading-8  text-center md:text-left flex gap-5 flex-1 flex-col justify-center">
-          <h1 className="  text-3xl text-[#1F2D3D]">Let's Start</h1>
-          <p className="text-gray-500 px-2 leading-8 md:w-auto">
-            Lorem ipsum dolor sit amet, labore et dolore magna aliqua.Lorem
-            ipsum dolor sit amet, labore et dolore magna aliqua.
-          </p>
+      <section className="relative flex flex-col lg:flex-row lg:justify-between my-9 min-h-[211px]    bg-white shadow-md rounded-[50px] md:rounded-[75px] ">
+        <div className="lg:px-[60px] py-6 lg:leading-8  text-center lg:text-left flex gap-5 flex-1 flex-col justify-center">
+          <h1 className="  text-3xl text-[#1F2D3D]">{letsstart.title}</h1>
+          <p className="text-gray-500 px-2 leading-8 lg:w-auto">{letsstart.content}</p>
         </div>
 
 
-        <div className="flex flex-1 h-[100px] md:bg-transparent rounded-[30px] ">
-         <Image src={trapezium} responsive  className='absolute top-0  right-0 hidden md:block object-fill' />
+        <div className="flex flex-1 h-[100px] lg:bg-transparent rounded-[30px] ">
+         <Image src={trapezium} responsive  className='absolute top-0  right-0 hidden lg:block object-fill' />
          {/* these same buttons is for desktop breakpoints */}
-          <div className=" absolute right-[90px] top-[78px] hidden md:flex gap-3  z-[1]" >
+          <div className=" absolute top-[78px] right-[100px] hidden lg:flex gap-3" >
           <button
             type="button"
-            class="text-white stroke-white text-[16px] flex items-center gap-3   hover:text-[#1F2D3D] hover:stroke-[#1F2D3D] rounded-3xl transition-all  font-light  text-sm px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="flex gap-2 items-center text-white hover:bg-gray-400 px-3 text-[17px] w-[123px] h-[57px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
           >
-            How to start
+            {letsstart.buttons[0].title}
             <svg
               width="7"
               height="11"
@@ -458,26 +459,30 @@ const LetsStart = () => {
               <path
                 d="M1.625 1.125L6 5.5L1.625 9.875"
                 stroke="inherit"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
           <button
             type="button"
-            className="text-[#1F2D3D] text-medium w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-semibold rounded-[2rem] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-darkgot text-[17px] hover:text-white bg-white w-[153px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
           >
-            Let's start
+             {letsstart.buttons[1].title}
           </button>
           </div>
           {/* these buttons is for mobile break point */}
-          <div className="flex bg-gotimate md:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]" >
+          <div className="flex gap-3 bg-gotimate lg:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]" >
           <button
             type="button"
-            class="text-white flex items-center gap-3   hover:text-dimgot rounded-3xl transition-all  font-semibold  text-medium px-4 py-5 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+            className="text-darkgot text-[17px] bg-white w-[123px] h-[57px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
+          >{letsstart.buttons[0].title}</button>
+          <button
+            type="button"
+            className="flex gap-2 items-center text-white hover:bg-gray-400 px-1 text-[17px] w-[123px] h-[57px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
           >
-            How to start
+              {letsstart.buttons[1].title}
             <svg
               width="7"
               height="11"
@@ -487,19 +492,14 @@ const LetsStart = () => {
             >
               <path
                 d="M1.625 1.125L6 5.5L1.625 9.875"
-                stroke="#fff"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                stroke="inherit"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
-          <button
-            type="button"
-            className="text-[#1F2D3D] text-[16px] w-[153px] h-[57px] p-1 bg-white hover:bg-gray-800 hover:text-white transition-all focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-[2rem] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-          >
-            Let's start
-          </button>
+        
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import Layout from "@/components/Layout";
-import {Manrope} from '@next/font/google'
+import {Manrope} from 'next/font/google'
 
 
 const manrope = Manrope({ subsets: ['latin'],weight:['300','500','700'] })
