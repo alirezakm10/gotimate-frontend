@@ -14,7 +14,7 @@ const Footer = () => {
         {logo}
           </Link>
 
-          <p className="text-gray-500">
+          <p className="text-gray-500 leading-8">
             {footer.excerpt}
           </p>
           <div className="flex gap-3">
@@ -36,7 +36,7 @@ const Footer = () => {
         {/* section two */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
           <h1 className=" text-2xl font-bold">{footer.subscribe.title}</h1>
-          <p className="text-gray-500">
+          <p className="text-gray-500 leading-8">
           {footer.subscribe.content}
           </p>
           <form className="flex flex-col items-center">
