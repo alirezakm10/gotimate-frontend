@@ -28,7 +28,10 @@ a {
 
 .hero-pic{
   background-position: center 50%;
-  @apply bg-[url('/hero.jpg')] relative bg-no-repeat bg-cover object-contain brightness-[70%]	
+  @apply bg-[url('/hero.jpg')] relative bg-no-repeat bg-cover object-contain
+}
+.hero-partial {
+  background-color: rgba(0, 0, 0, 0.361);
 }
 
 .trapezium {

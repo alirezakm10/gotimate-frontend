@@ -61,12 +61,12 @@ const Hero = () => {
       </section>
 
       {/* cards container */}
-      <section className="relative rounded-3xl h-auto  md:flex items-center justify-center md:h-[350px] hero-pic ">
+      <section className="relative overflow-hidden rounded-3xl h-auto  md:flex items-center justify-center md:h-[350px] hero-pic ">
         
-        
+        <div className="absolute w-full h-full hero-partial " ></div>
         {/* card */}
         {hero.userGuid.map((card, i) => (
-        <div className="flex flex-col justify-center p-8 brightness-125 saturate-100 mb-10 md:mb-0">
+        <div className="relative flex flex-col justify-center p-8 mb-10 md:mb-0">
           <h1 className="text-bluegot text-4xl font-bold ">{card.num}</h1>
           <div className="relative flex" >
           <h2 className="text-white text-2xl my-2">{card.title}</h2>
