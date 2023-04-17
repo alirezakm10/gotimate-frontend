@@ -4,8 +4,8 @@ import Footer from './Footer'
 const Layout = ({children}) => {
   return (
     <>
+    <main className=' px-[14px] mx-auto lg:container bg-[#fafafa] py-4 bg-transparent  relative overflow-hidden lg:overflow-visible' >
 <Navbar />
-    <main className=' container mx-auto px-lg bg-[#fafafa] py-4 bg-transparent  relative overflow-hidden sm:overflow-visible' >
     {children}
     <Footer />
     </main>

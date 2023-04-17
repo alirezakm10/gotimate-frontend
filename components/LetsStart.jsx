@@ -8,7 +8,7 @@ const LetsStart = () => {
 
   
   return (
-    <section className="relative overflow-hidden my-[100px] py-10">
+    <section className="relative my-[100px] py-10">
         {/* bottom left illustration */}
       <div className="absolute bottom-[0px] left-[-61px] ">
         <svg

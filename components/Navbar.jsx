@@ -7,7 +7,7 @@ const Navbar = () => {
   const { logo, navbar, socialNetworks } = initialData;
 
   return (
-    <nav className="lg:container mx-auto lg:px-lg lg:py-4 border-gray-200">
+    <nav className="border-gray-200">
       <div className="overflow-hidden flex flex-wrap items-center justify-between ">
         <a href="https://gotimate.com/" className="flex items-center">
           <div className="h-10  hidden lg:flex">
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
 
           {/* hamburger menu logo and user icon in mobile mode */}
-          <div className="w-screen bg-transparent flex lg:hidden justify-between p-5">
+          <div className="w-screen bg-transparent flex lg:hidden justify-between">
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <button
               type="button"
-              className=" stroke-darkgot"
+              className=" stroke-darkgot mr-10"
             >
               <svg
                 width="25"

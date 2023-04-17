@@ -14,9 +14,9 @@ const Faq = () => {
  
 
   return (
-    <section className="relative overflow-hidden my-[100px] py-4 z-[1]">
+    <section className="relative  my-[100px] py-4 z-[1]">
       {/* top right illustration */}
-      <div className="absolute top-[0px] left-[-61px] ">
+      <div className="absolute top-[-40px] left-[-61px] ">
         <svg
           width="110"
           height="110"

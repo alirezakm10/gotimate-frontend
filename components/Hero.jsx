@@ -22,7 +22,7 @@ const Hero = () => {
       <h1 className="text-5xl text-[#1F2D3D] font-bold ">
       {hero.breaktitle}
       </h1>
-        <p className="text-gray-500 py-4 md:w-1/2">
+        <p className="text-gray-500 py-4 lg:w-1/2">
           {hero.content}
         </p>
         <div className="flex gap-7 my-6">
