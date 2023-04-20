@@ -16,7 +16,7 @@ const Navbar = () => {
         </a>
         <div className="md:order-2 ">
           <div className="hidden lg:flex">
-            <Link href='https://dashv1.gotimate.com' >
+            <Link href='https://dashv1.gotimate.com/login' >
             <button
               type="button"
               className="text-darkgot text-[14px] w-[100px] h-[40px] hover:text-gotimate transition-all rounded-[10px]"
@@ -124,7 +124,7 @@ const Navbar = () => {
                   Sign up
                 </button>
                 </Link>
-                <Link href='https://dashv1.gotimate.com' >
+                <Link href='https://dashv1.gotimate.com/login' >
                 <button
                   type="button"
                   className="text-darkgot text-[14px] w-[100px] h-[40px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"
