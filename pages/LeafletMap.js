@@ -14,7 +14,7 @@ const LeafletMap = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 
       />
-      <Marker position={[35.72550, 51.38623]} icon={}  ></Marker>
+      <Marker position={[35.72550, 51.38623]} ></Marker>
     </MapContainer>
   );
 };
