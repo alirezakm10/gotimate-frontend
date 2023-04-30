@@ -16,7 +16,7 @@ const Navbar = () => {
         </a>
         <div className="md:order-2 ">
           <div className="hidden lg:flex">
-            <Link href='https://dashv1.gotimate.com/login' >
+            <Link href='https://dashboard.gotimate.com/login' >
             <button
               type="button"
               className="text-darkgot text-[14px] w-[100px] h-[40px] hover:text-gotimate transition-all rounded-[10px]"
@@ -24,7 +24,7 @@ const Navbar = () => {
               Login
             </button>
             </Link>
-            <Link href='https://dashv1.gotimate.com/signup' >
+            <Link href='https://dahsboard.gotimate.com/signup' >
             <button
               type="button"
               className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
@@ -59,7 +59,7 @@ const Navbar = () => {
               </svg>
             </button>
          {logo}
-            <Link href='https://dashv1.gotimate.com'  className="flex items-center stroke-darkgot mr-10" >
+            <Link href='https://dashboard.gotimate.com'  className="flex items-center stroke-darkgot mr-10" >
         
               <svg
                 width="25"
@@ -116,7 +116,7 @@ const Navbar = () => {
 
               {/* login signup buttons in mobile menu */}
               <div className="gap-2 flex mx-auto">
-                <Link href='https://dashv1.gotimate.com/signup' >
+                <Link href='https://dashboard.gotimate.com/signup' >
                 <button
                   type="button"
                   className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
@@ -124,7 +124,7 @@ const Navbar = () => {
                   Sign up
                 </button>
                 </Link>
-                <Link href='https://dashv1.gotimate.com/login' >
+                <Link href='https://dashboard.gotimate.com/login' >
                 <button
                   type="button"
                   className="text-darkgot text-[14px] w-[100px] h-[40px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"

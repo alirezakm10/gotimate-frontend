@@ -74,12 +74,12 @@ navbar : {
     ,
     {
       title:'About',
-      route:'/about'
+      route:'/aboutus'
     }
     ,
     {
       title:'Contact Us',
-      route:'/contact'
+      route:'/contactus'
     }
 
   ]
@@ -125,7 +125,7 @@ navbar : {
     },
     // faq data object
    faq: {
-        title:'Got',
+        title:'FAQ',
         breaktitle:'Question?',
         br:<br />,
         content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',

@@ -46,6 +46,15 @@ a {
   }
 }
 
+.mail-icon {
+  @apply bg-[url('/icons/shield.svg')] absolute bg-no-repeat bg-right-top w-full h-full
+}
+.phone-icon {
+  @apply bg-[url('/icons/shield.svg')] absolute bg-no-repeat bg-right-top w-full h-full
+}
+.location-icon {
+  @apply bg-[url('/icons/shield.svg')] absolute bg-no-repeat bg-right-top w-full h-full
+}
 
 .sky-gradient {
 /* Created with https://www.css-gradient.com */
