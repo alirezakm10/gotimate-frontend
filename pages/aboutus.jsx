@@ -150,13 +150,13 @@ const aboutus = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           </p>
         </div>
-        <section className="w-full flex flex-col gap-3 md:flex-row justify-center items-center">
+        <section className="w-full flex flex-col gap-[70px] md:flex-row justify-center items-center md:my-9">
           {/* card start */}
-          <section className=" relative flex flex-col gap-3 flex-1">
-            <div className="relative overflow-hidden w-full h-auto max-h-[400px]">
-              <Image src="/team/sample.jpg" width={300} height={300} />
+          <section className=" relative flex flex-col gap-3 flex-1 drop-shadow-lg">
+            <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
+              <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-lg">Sajad Karami</h1>
+            <h1 className="text-2xl">Sajad Karami</h1>
             <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
             <p className="leading-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -165,12 +165,12 @@ const aboutus = () => {
             </p>
           </section>
           {/* card end */}
-                   {/* card start */}
-                   <section className=" relative flex flex-col gap-3 flex-1">
-            <div className="relative overflow-hidden w-full h-auto max-h-[40%]">
-              <img src="/team/sample.jpg" width="100%" height="100%" />
+           {/* card start */}
+           <section className=" relative flex flex-col gap-3 flex-1 drop-shadow-lg">
+            <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
+              <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-lg">Sajad Karami</h1>
+            <h1 className="text-2xl">Sajad Karami</h1>
             <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
             <p className="leading-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -179,12 +179,56 @@ const aboutus = () => {
             </p>
           </section>
           {/* card end */}
-                   {/* card start */}
-                   <section className=" relative flex flex-col gap-3 flex-1">
-            <div className="relative overflow-hidden w-full h-auto max-h-[40%]">
-              <img src="/team/sample.jpg" width="100%" height="100%" />
+           {/* card start */}
+           <section className=" relative flex flex-col gap-3 flex-1 drop-shadow-lg">
+            <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
+              <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-lg">Sajad Karami</h1>
+            <h1 className="text-2xl">Sajad Karami</h1>
+            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <p className="leading-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam .
+            </p>
+          </section>
+          {/* card end */}
+        </section>
+        <section className="w-full flex flex-col gap-[70px] md:flex-row justify-center items-center md:my-9">
+          {/* card start */}
+          <section className=" relative flex flex-col gap-3 flex-1 drop-shadow-lg">
+            <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
+              <img src="/team/2.jpg" width="100%" height="100%" />
+            </div>
+            <h1 className="text-2xl">Sajad Karami</h1>
+            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <p className="leading-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam .
+            </p>
+          </section>
+          {/* card end */}
+           {/* card start */}
+           <section className=" relative flex flex-col gap-3 flex-1 drop-shadow-lg">
+            <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
+              <img src="/team/2.jpg" width="100%" height="100%" />
+            </div>
+            <h1 className="text-2xl">Sajad Karami</h1>
+            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <p className="leading-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam .
+            </p>
+          </section>
+          {/* card end */}
+           {/* card start */}
+           <section className=" relative flex flex-col gap-3 flex-1 drop-shadow-lg">
+            <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
+              <img src="/team/2.jpg" width="100%" height="100%" />
+            </div>
+            <h1 className="text-2xl">Sajad Karami</h1>
             <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
             <p className="leading-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
