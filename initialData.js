@@ -191,7 +191,7 @@ navbar : {
     },
     // footer data object
    footer: {
-        excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci quis nostrud exercitation.',
+        excerpt: 'Your experiences are valuable!',
         subscribe:{
             title:'Subscribe',
             content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',

@@ -1,9 +1,17 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import {Navbar, Hero, Faq, LetsStart, BusinessAccount} from '@/components'
-
+import {Hero, Faq, LetsStart, BusinessAccount} from '@/components'
+import { useTranslation } from 'react-i18next'
+import i18n from 'i18next';
 
 export default function Home() {
+  const [language, setLanguage] = useState('en')
+  const { t } = useTranslation()
+  const handleLanguageChange = (newLanguage) => {
+    setLanguage(newLanguage)
+    i18n.changeLanguage(newLanguage)
+  }
   return (
     <>
       <Head>

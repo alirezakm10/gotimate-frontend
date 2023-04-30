@@ -1,8 +1,37 @@
 import Link from "next/link";
 import Image from "next/image";
 import Map from "./Map";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { useAxios } from "@/hooks/useAxios";
 
 const contactus = () => {
+  const { postData } = useAxios();
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      first_name: "",
+      last_name: "",
+      message: "",
+    },
+    //form validation
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .email("Invalid email address.")
+        .required("Emaill is required."),
+      first_name: Yup.string()
+        .max(20, "less than 20 character")
+        .required("first name is required."),
+      last_name: Yup.string()
+        .max(20, "less than 20 character")
+        .required("last name is required."),
+      message: Yup.string().required("Please type somthing!"),
+    }),
+    // submit form
+    onSubmit: (values) => {
+      postData(process.env.contactUs, values);
+    },
+  });
   return (
     <section className="flex flex-col text-darkgot h-auto py-3">
       {/* this is blured header container */}
@@ -87,89 +116,144 @@ const contactus = () => {
       {/* full width card one */}
       <section className=" w-full mx-auto flex flex-col-reverse gap-[40px] md:flex-row my-[30px] ">
         <div className="flex flex-col justify-center w-full">
-          <form className="flex flex-col gap-3">
+          <form onSubmit={formik.handleSubmit} className="flex flex-col gap-3">
             <div className="flex flex-col items-start">
               <h1 className="text-[52px]">Contact Us</h1>
               <p className="text-sm py-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing .
               </p>
             </div>
-            <div className="w-full flex flex-col md:flex-row gap-3">
-              <input
-                id="firstname"
-                type="text"
-                name="firstname"
-                className={`text-[14px] placeholder-gray-500
-              bg-middarkloan
-                pl-3
-                    rounded-[6px]
-                    border border-[#e0e0e0]
-                    
-                    w-full
-                    h-[40px]
-                    py-2
-                    focus:outline-none focus:border-blueloan
-                    card-hover
-                  `}
-                placeholder="First name"
-              />
-              <input
-                id="lastname"
-                type="text"
-                name="lastname"
-                className={`text-[14px] placeholder-gray-500
-              bg-middarkloan
-                pl-3
-                    rounded-[6px]
-                    border border-[#e0e0e0]
-                    
-                    w-full
-                    h-[40px]
-                    py-2
-                    focus:outline-none focus:border-blueloan
-                    card-hover
-                  `}
-                placeholder="Last name"
-              />
+
+            <div className="flex flex-col md:flex-row gap-3 w-[100%]">
+              <div className="relative w-full">
+                <input
+                  id="first_name"
+                  type="text"
+                  name="first_name"
+                  className={`text-[14px] placeholder-gray-500
+                pl-4
+                pr-4
+                rounded-[6px]
+                 border border-[#e0e0e0]
+                w-full
+                h-[40px]
+                py-2
+                focus:outline-none focus:border-blue-400
+                ${
+                  formik.touched.first_name &&
+                  formik.errors.first_name &&
+                  "border-red-500"
+                }
+              `}
+                  placeholder="First Name"
+                  value={formik.values.first_name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {/* text error place */}
+                {formik.touched.first_name && formik.errors.first_name && (
+                  <span className="absolute z-[10] transition-all bg-white p-1 rounded-md border border-red-500 left-0 top-[40px] text-sm text-red-500">
+                    {formik.errors.first_name}
+                  </span>
+                )}
+              </div>
+
+              <div className="relative w-full">
+                <input
+                  id="last_name"
+                  type="text"
+                  name="last_name"
+                  className={`text-[14px] placeholder-gray-500
+                pl-4
+                pr-4
+                rounded-[6px]
+                 border border-[#e0e0e0]
+                w-full
+                h-[40px]
+                py-2
+                focus:outline-none focus:border-blue-400
+                ${
+                  formik.touched.last_name &&
+                  formik.errors.last_name &&
+                  "border-red-500"
+                }
+              `}
+                  placeholder="Last Name"
+                  value={formik.values.last_name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {/* text error place */}
+                {formik.touched.last_name && formik.errors.last_name && (
+                  <span className="absolute z-[10] transition-all bg-white p-1 rounded-md border border-red-500 left-0 top-[40px] text-sm text-red-500">
+                    {formik.errors.last_name}
+                  </span>
+                )}
+              </div>
             </div>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              className={`text-[14px] placeholder-gray-500
+
+            <div className="relative w-[100%]">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                className={`text-[14px] placeholder-gray-500
+              pl-4
+              pr-4
+              rounded-[6px]
+               border border-[#e0e0e0]
+              w-full
+              h-[40px]
+              py-2
+              focus:outline-none focus:border-blue-400
+              ${formik.touched.email && formik.errors.email && "border-red-500"}
+            `}
+                placeholder="Email address"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {/* text error place */}
+              {formik.touched.email && formik.errors.email && (
+                <span className="absolute z-[10] transition-all bg-white p-1 rounded-md border border-red-500 left-0 top-[40px] text-sm text-red-500">
+                  {formik.errors.email}
+                </span>
+              )}
+            </div>
+
+            <div className="relative w-[100%]">
+              <textarea
+                value={formik.values.message}
+                className={`text-[14px] placeholder-gray-500
               bg-middarkloan
-                    pl-3
+                    pl-4
                     rounded-[6px]
                     border border-[#e0e0e0]
-                    
                     w-full
-                    h-[40px]
                     py-2
                     focus:outline-none focus:border-blueloan
                     card-hover
                   `}
-              placeholder="Email Address"
-            />
-            <textarea
-              className={`text-[14px] placeholder-gray-500
-              bg-middarkloan
-                    pl-3
-                    rounded-[6px]
-                    border border-[#e0e0e0]
-                    w-full
-                    py-2
-                    focus:outline-none focus:border-blueloan
-                    card-hover
-                  `}
-              name=""
-              id=""
-              cols="30"
-              rows="4"
-            ></textarea>
-            <div className="flex w-full">
+                name="message"
+                id="message"
+                cols="30"
+                rows="4"
+                placeholder="Type your Message"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              ></textarea>
+              {/* text error place */}
+              {formik.touched.message && formik.errors.message && (
+                <span className="absolute z-[10] transition-all bg-white p-1 rounded-md border border-red-500 left-0 top-[40px] text-sm text-red-500">
+                  {formik.errors.message}
+                </span>
+              )}
+            </div>
+
+            <div className="flex w-[100%]">
               <button
                 type="submit"
-                className="w-full flex justify-center items-center gap-1 bg-[#05697E] transition-all hover:bg-darkgot text-white  h-[40px] rounded-md mx-auto"
+                className="w-full flex justify-center items-center gap-1 bg-gotimate transition-all hover:bg-darkgot text-white h-[40px] rounded-md mx-auto"
               >
                 Submit
               </button>
@@ -179,7 +263,12 @@ const contactus = () => {
 
         {/* image illustration */}
         <div className=" relative w-full">
-          <img src="/contactus.svg" width='100%' height='100%' alt='contact us illuatration' />
+          <img
+            src="/contactus.svg"
+            width="100%"
+            height="100%"
+            alt="contact us illuatration"
+          />
         </div>
       </section>
 
@@ -192,27 +281,41 @@ const contactus = () => {
           </p>
         </div>
         <section className="w-full flex flex-col md:flex-row justify-center items-center">
-          <a href='mailto:contact@gotimate.com' className="flex gap-7 items-center w-[90%] md:w-[60%]">
+          <a
+            href="mailto:contact@gotimate.com"
+            className="flex gap-7 items-center w-[90%] md:w-[60%]"
+          >
             <div className="flex justify-center items-center bg-dimdarkloan rounded-full w-[50px] h-[50px] dark-icon-container">
-              <Image src="/icons/mail.svg" priority width="30" height="30" alt="email" />
+              <Image
+                src="/icons/mail.svg"
+                priority
+                width="30"
+                height="30"
+                alt="email"
+              />
             </div>
             <div className="flex flex-col">
               <h1 className="text-lg my-0">Email</h1>
-              <p  className="text-[12px]">
-              contact@gotimate.com
-              </p>
+              <p className="text-[12px]">contact@gotimate.com</p>
             </div>
           </a>
           {/* card end */}
-          <a href="tel:+98125325658" className="flex gap-7 items-center w-[90%] md:w-[60%]">
+          <a
+            href="tel:+98125325658"
+            className="flex gap-7 items-center w-[90%] md:w-[60%]"
+          >
             <div className="flex justify-center items-center bg-dimdarkloan rounded-full w-[50px] h-[50px] dark-icon-container">
-              <Image src="/icons/phone.svg" priority width="30" height="30" alt='phone number' />
+              <Image
+                src="/icons/phone.svg"
+                priority
+                width="30"
+                height="30"
+                alt="phone number"
+              />
             </div>
             <div className="flex flex-col">
               <h1 className="text-lg my-0">Phone</h1>
-              <p className="text-[12px]">
-              +98 912 635 0320
-              </p>
+              <p className="text-[12px]">+98 912 635 0320</p>
             </div>
           </a>
           {/* card end */}
@@ -223,14 +326,12 @@ const contactus = () => {
                 priority
                 width="30"
                 height="30"
-                alt='address'
+                alt="address"
               />
             </div>
             <div className="flex flex-col">
               <h1 className="text-lg my-0">Address</h1>
-              <p className="text-[12px]">
-              No 12 , tehran , iran
-              </p>
+              <p className="text-[12px]">No 12 , tehran , iran</p>
             </div>
           </section>
           {/* card end */}
