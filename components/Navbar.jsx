@@ -136,7 +136,7 @@ const Navbar = () => {
 
               <ul className="MENU-LINK-MOBILE-OPEN text-lg font-light text-gray-800 flex flex-col gap-8 items-start justify-around min-h-[250px] w-full">
                 {navbar.links.map((link, i) => (
-                  <Link key={i} href={link.route} className="hover:text-gotimate" >{link.title}</Link>
+                  <Link onClick={() => setIsNavOpen(false)} key={i} href={link.route} className="hover:text-gotimate" >{link.title}</Link>
                 ))}
               </ul>
               <div className="flex flex-col items-center gap-3 absolute bottom-[100px] left-0 right-0">
