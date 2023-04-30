@@ -1,8 +1,6 @@
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { icon } from 'leaflet/dist/leaflet.css';
 import L from 'leaflet'
-import pinIcon from '../public/icons/pin.png';
 
 const LeafletMap = () => {
   const CustomMarkerIcon = L.icon({
@@ -20,7 +18,7 @@ const LeafletMap = () => {
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="Map data © <a href='https://openstreetmap.org'>OpenStreetMap</a> contributors"
+
       />
       <Marker position={[35.72550, 51.38623]} icon={CustomMarkerIcon} ></Marker>
     </MapContainer>
