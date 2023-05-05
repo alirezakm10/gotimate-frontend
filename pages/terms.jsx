@@ -1,11 +1,13 @@
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 const terms = () => {
+  const { t } = useTranslation()
   return (
     <section className="flex flex-col justify-center py-3 text-darkgot" >
              <section className="blured-headpage">
         <nav className="flex justify-between pt-3" aria-label="Breadcrumb">
-          <p>Terms and Conditions</p>
+          <p>{t('termsTitle')}</p>
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
               <Link
@@ -50,7 +52,7 @@ const terms = () => {
                     />
                   </g>
                 </svg>
-                Home
+                {t('home')}
               </Link>
             </li>
             <li>
@@ -69,10 +71,9 @@ const terms = () => {
                   ></path>
                 </svg>
                 <p
-                  href="#"
                   className="ml-1 text-sm font-medium text-gray-700 hover:text-blueloan md:ml-2 dark:text-gray-400 dark:hover:text-white"
                 >
-                  terms
+                  {t('termsSlug')}
                 </p>
               </div>
             </li>
@@ -80,29 +81,31 @@ const terms = () => {
         </nav>
       </section>
         <section className="flex flex-col items-center justify-center my-[30px]" >
-        <h1 className="text-3xl text-darkgot" >Term and Condition</h1>
-        <p className="text-md text-center leading-8 py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt .</p>
+        <h1 className="text-3xl text-darkgot" >{t('termsTitle')}</h1>
+        <p className="text-md text-center leading-8 py-3" >{t('termsSubtitle')}</p>
         </section>
         {/* these are cards */}
         <section className="my-3" >
-            <h1 className="text-lg" >1. Title one about something</h1>
-            <p className=" text-sm text-dimgot leading-8" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed libero enim sed faucibus.  Nisl rhoncus mattis rhoncus urna neque viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus accumsan tortor posuere ac ut consequat semper. Ut eu sem integer vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque.</p>
+            <h1 className="text-lg" >{t('term1Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            {t('term1Content')}
+            </p>
         </section>
         <section className="my-3" >
-            <h1 className="text-lg" >2. Title one about something</h1>
-            <p className=" text-sm text-dimgot leading-8" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed libero enim sed faucibus.  Nisl rhoncus mattis rhoncus urna neque viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus accumsan tortor posuere ac ut consequat semper. Ut eu sem integer vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus accumsan tortor posuere ac ut consequat semper. Ut eu sem integer vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque</p>
+            <h1 className="text-lg" >{t('term2Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >{t('term2Content')}</p>
         </section>
         <section className="my-3" >
-            <h1 className="text-lg" >3. Title one about something</h1>
-            <p className=" text-sm text-dimgot leading-8" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed libero enim sed faucibus.  Nisl rhoncus mattis rhoncus urna neque viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet.</p>
+            <h1 className="text-lg" >{t('term3Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >{t('term3Content')}</p>
         </section>
         <section className="my-3" >
-            <h1 className="text-lg" >4. Title one about something</h1>
-            <p className=" text-sm text-dimgot leading-8" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed libero enim sed faucibus.  Nisl rhoncus mattis rhoncus urna neque viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus accumsan tortor posuere ac ut consequat semper. Ut eu sem integer vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus accumsan tortor posuere ac ut consequat semper. Ut eu sem integer vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque</p>
+            <h1 className="text-lg" >{t('term4Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >{t('term4Content')}</p>
         </section>
         <section className="my-3" >
-            <h1 className="text-lg" >5. Title one about something</h1>
-            <p className=" text-sm text-dimgot leading-8" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed libero enim sed faucibus.  Nisl rhoncus mattis rhoncus urna neque viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus accumsan tortor posuere ac ut consequat semper. Ut eu sem integer vitae justo eget magna fermentum.</p>
+            <h1 className="text-lg" >{t('term5Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >{t('term5Content')}</p>
         </section>
     </section>
   )

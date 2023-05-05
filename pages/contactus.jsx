@@ -4,8 +4,10 @@ import Map from "./Map";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useAxios } from "@/hooks/useAxios";
+import { useTranslation } from 'react-i18next'
 
 const contactus = () => {
+  const { t } = useTranslation()
   const { postData } = useAxios();
   const formik = useFormik({
     initialValues: {
@@ -118,9 +120,9 @@ const contactus = () => {
         <div className="flex flex-col justify-center w-full">
           <form onSubmit={formik.handleSubmit} className="flex flex-col gap-3">
             <div className="flex flex-col items-start">
-              <h1 className="text-[52px]">Contact Us</h1>
+              <h1 className="text-[52px]">{t('cuTitleP')}</h1>
               <p className="text-sm py-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing .
+                {t('cuSubtitlep')}
               </p>
             </div>
 
@@ -145,7 +147,7 @@ const contactus = () => {
                   "border-red-500"
                 }
               `}
-                  placeholder="First Name"
+                  placeholder={t('cuFirstnamePlaceholder')}
                   value={formik.values.first_name}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
@@ -178,7 +180,7 @@ const contactus = () => {
                   "border-red-500"
                 }
               `}
-                  placeholder="Last Name"
+              placeholder={t('cuLastnamePlaceholder')}
                   value={formik.values.last_name}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
@@ -208,7 +210,7 @@ const contactus = () => {
               focus:outline-none focus:border-blue-400
               ${formik.touched.email && formik.errors.email && "border-red-500"}
             `}
-                placeholder="Email address"
+                placeholder={t('cuEmailPlaceholder')}
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -238,7 +240,7 @@ const contactus = () => {
                 id="message"
                 cols="30"
                 rows="4"
-                placeholder="Type your Message"
+                placeholder={t('cuDescPlaceholder')}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               ></textarea>
@@ -255,7 +257,7 @@ const contactus = () => {
                 type="submit"
                 className="w-full flex justify-center items-center gap-1 bg-gotimate transition-all hover:bg-darkgot text-white h-[40px] rounded-md mx-auto"
               >
-                Submit
+                {t('submitBtn')}
               </button>
             </div>
           </form>
@@ -275,9 +277,9 @@ const contactus = () => {
       {/* call and contacts */}
       <section className="flex flex-col gap-3">
         <div className="flex flex-col items-center mt-[70px] mb-[40px]">
-          <h1 className="text-3xl">Contact Detail</h1>
+          <h1 className="text-3xl">{t('cuDetailTitle')}</h1>
           <p className="text-sm py-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            {t('cuDetailSubtitle')}
           </p>
         </div>
         <section className="w-full flex flex-col md:flex-row justify-center items-center">
@@ -295,8 +297,8 @@ const contactus = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-lg my-0">Email</h1>
-              <p className="text-[12px]">contact@gotimate.com</p>
+              <h1 className="text-lg my-0">{t('emailText')}</h1>
+              <p className="text-[12px]">{t('emailAddress')}</p>
             </div>
           </a>
           {/* card end */}
@@ -314,8 +316,8 @@ const contactus = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-lg my-0">Phone</h1>
-              <p className="text-[12px]">+98 912 635 0320</p>
+              <h1 className="text-lg my-0">{t('phoneText')}</h1>
+              <p className="text-[12px]">{t('phoneNumber')}</p>
             </div>
           </a>
           {/* card end */}
@@ -330,8 +332,8 @@ const contactus = () => {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-lg my-0">Address</h1>
-              <p className="text-[12px]">No 12 , tehran , iran</p>
+              <h1 className="text-lg my-0">{t('addressText')}</h1>
+              <p className="text-[12px]">{t('address')}</p>
             </div>
           </section>
           {/* card end */}
@@ -339,7 +341,7 @@ const contactus = () => {
         {/* map structure */}
 
         <section className="flex flex-col justify-center items-center w-full text-center my-[30px]">
-          <h1 className="text-3xl py-2">Where we are</h1>
+          <h1 className="text-3xl py-2">{t('cuMapTitle')}</h1>
           <Map />
         </section>
       </section>

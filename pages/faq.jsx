@@ -3,9 +3,13 @@ import AccordionItem from "@/components/AccordionItem";
 import { initialData } from "@/initialData";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const faq = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredSearch, setFilteredSearch] = useState([])
   const router = useRouter();
+  const { t } = useTranslation();
   const [faqPage, setFaqPage] = useState(false);
   const [open, setOpen] = useState(false);
   const toggle = (index) => {
@@ -14,6 +18,18 @@ const faq = () => {
     }
     setOpen(true);
   };
+  const [...data] = initialData.faq.accordionData;
+
+  const handleSearch = (e) => { 
+    setSearchTerm(e.target.value)
+    const filteredResults = data.filter(item => {
+      const retrivedQuestion = t(item.question)
+      if(e.target.value === "") return data
+      return retrivedQuestion.toLowerCase().includes(e.target.value.toLowerCase())
+    } )
+   setFilteredSearch(filteredResults)
+  }
+ 
   const { faq } = initialData;
 
   useEffect(() => {
@@ -28,7 +44,7 @@ const faq = () => {
     >
       <section className="blured-headpage">
         <nav className="flex justify-between pt-3" aria-label="Breadcrumb">
-          <p>FAQ</p>
+          <p> {t('faqTitleP')}</p>
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
               <Link
@@ -73,7 +89,7 @@ const faq = () => {
                     />
                   </g>
                 </svg>
-                Home
+                {t('home')}
               </Link>
             </li>
             <li>
@@ -92,10 +108,9 @@ const faq = () => {
                   ></path>
                 </svg>
                 <p
-                  href="#"
                   className="ml-1 text-sm font-medium text-gray-700 hover:text-blueloan md:ml-2 dark:text-gray-400 dark:hover:text-white"
                 >
-                  FAQ
+                  {t('faqTitleP')}
                 </p>
               </div>
             </li>
@@ -105,12 +120,12 @@ const faq = () => {
 
       <section className="flex flex-col text-darkgot h-auto gap-2 relative overflow-hidden items-center">
         {/* start of faq details */}
-        <div className="flex flex-col text-center items-center my-[30px]">
-          <h1 className="text-[52px]">{faq.title}</h1>
-          <h2 className="text-3xl py-2 ">All of the answers are here</h2>
-          <p className="text-gray-500  text-center leading-8">{faq.content}</p>
+        <div className="flex flex-col text-center w-full items-center my-[30px]">
+          <h1 className="text-[52px]">{t('faqTitleP')}</h1>
+          <h2 className="text-3xl py-2 ">{t('faqSubtitleP')}</h2>
+          <p className="text-gray-500  text-center leading-8">{t('faqSubtitle')}</p>
           {/* below div is search input div */}
-          <div className="relative w-[100%] md:w-[60%] mt-[30px]">
+          <div className="relative  w-full md:w-[60%] mt-[30px]">
             <div
               className="
                     inline-flex
@@ -182,9 +197,7 @@ const faq = () => {
               </svg>
             </div>
             <input
-              id="email"
-              type="email"
-              name="email"
+              type="text"
               className={`text-[14px] placeholder-gray-500
               bg-middarkloan
                     pl-10
@@ -196,7 +209,8 @@ const faq = () => {
                     focus:outline-none focus:border-blueloan
                     card-hover
                   `}
-              placeholder="Search .."
+                  placeholder={t("faqSearchPlaceholder")}
+                  onChange={handleSearch}
             />
           </div>
         </div>
@@ -204,8 +218,10 @@ const faq = () => {
 
         {/* start of accordions contariner */}
         <div className="">
-          {faq.accordionData.map((data, index) => {
-            return (
+                  {/* start of accordions contariner */}
+
+          {filteredSearch.length !== 0  &&
+          filteredSearch.map((data, index) => (
               <AccordionItem
                 key={index}
                 open={index === open}
@@ -213,8 +229,19 @@ const faq = () => {
                 question={data.question}
                 answer={data.answer}
               />
-            );
-          })}
+            )
+          )
+}
+{ router.pathname.includes('/faq') && filteredSearch.length === 0 && data.map((data, index) => (
+            <AccordionItem
+              key={index}
+              open={index === open}
+              toggle={() => toggle(index)}
+              question={data.question}
+              answer={data.answer}            />
+          )
+        )
+         }
         </div>
         {/* end of accordions container */}
         {!faqPage && (

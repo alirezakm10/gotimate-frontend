@@ -86,73 +86,39 @@ navbar : {
 },
     // hero header data object
    hero: {
-        title:`Your experiences`,
-        breaktitle: 'are valuable !',
-        content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         buttons:[{
-            title:'Start Here',
             icon:null,
             url:'/contact'
         },{
-            title:'Learn About',
             icon: null,
-            url: '/dg'
+            url: '/aboutus'
         }],
-        userGuid:[
-            {
-                num:1,
-                title:'Create Account',
-                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                arrow: <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.125 10.625L34 25.5L19.125 40.375" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            },
-            {
-                num:2,
-                title:'Charge Wallet',
-                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                arrow: <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.125 10.625L34 25.5L19.125 40.375" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>                 
-            },
-            {
-                num:3,
-                title:'Good to go',
-                content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-                arrow:null              
-            }
-        ]
     },
     // faq data object
-   faq: {
-        title:'FAQ',
-        breaktitle:'Question?',
-        br:<br />,
-        content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        buttons:[{
-            title:'More questions',
-            icon: null,
-            url: null
-        }],
-        accordionData:[
-        {
-        question:'Lorem ipsum dolor sit amet ?',
-        answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        },
-        {
-        question:'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet?',
-        answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        },
-        {
-        question:'Lorem ipsum dolor sit amet a part ?',
-        answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        },
-        {
-        question:'Witch Lorem ipsum dolor sit amet a part ?',
-        answer:'Lorem ipsum dolor sit amet, consectdfstgetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        }
-    ]
-    },
+    faq: {
+      buttons:[{
+          icon: null,
+          url: null
+      }],
+      accordionData:[
+      {
+      question:'q1',
+      answer:'a1'
+      },
+      {
+      question:'q2',
+      answer:'a2'
+      },
+      {
+      question:'q3',
+      answer:'a3'
+      },
+      {
+      question:'q4',
+      answer:'a4'
+      }
+  ]
+  },
     // let's Start data object
    letsstart: {
         title:'Let\'s Start',

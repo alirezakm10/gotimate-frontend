@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import AccordionItem from "./AccordionItem";
 import { initialData } from "@/initialData";
+import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
 
 const Faq = () => {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false);
   const toggle = (index) => {
     if (open === index) {
@@ -55,16 +58,17 @@ const Faq = () => {
       <section className="flex flex-col md:flex-row h-auto gap-2 relative overflow-hidden items-start  ">
         {/* start of faq details */}
         <div className="md:w-1/2">
-          <h1 className="text-6xl text-[#1F2D3D] font-bold">{faq.title}</h1>
-          <h1 className="text-6xl text-[#1F2D3D] font-bold">{faq.breaktitle}</h1>
+          <h1 className="text-6xl text-[#1F2D3D] font-bold">{t('landingFaqTitle')}</h1>
+          <h1 className="text-6xl text-[#1F2D3D] font-bold">{t('landingFaqSubtitle')}</h1>
           <p className="text-gray-500 pt-8 pb-4 leading-8">
-            {faq.content}
+            {t('faqSubtitleP')}
           </p>
+          <Link href='/faq' >
           <button
             type="button"
             className="flex gap-2 items-center text-darkgot text-[14px] w-[157px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
           >
-            {faq.buttons[0].title}
+            {t('faqBtn')}
             <svg
               width="7"
               height="11"
@@ -81,6 +85,7 @@ const Faq = () => {
               />
             </svg>
           </button>
+          </Link>
         </div>
         {/* end of faq details */}
 
@@ -92,8 +97,8 @@ const Faq = () => {
                 key={index}
                 open={index === open}
                 toggle={() => toggle(index)}
-                question={data.question}
-                answer={data.answer}
+                question={t(data.question)}
+                answer={t(data.answer)}
               />
             );
           })}

@@ -1,14 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Map from "./Map";
+import { useTranslation } from 'react-i18next'
 
 const aboutus = () => {
+  const { t } = useTranslation()
   return (
     <section className="flex flex-col text-darkgot h-auto py-3">
       {/* this is blured header container */}
       <section className="blured-headpage">
         <nav className="flex justify-between pt-3" aria-label="Breadcrumb">
-          <p>Contact us</p>
+          <p>{t('auHead1p')}</p>
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
               <Link
@@ -53,7 +55,7 @@ const aboutus = () => {
                     />
                   </g>
                 </svg>
-                Home
+                {t('home')}
               </Link>
             </li>
             <li>
@@ -71,12 +73,11 @@ const aboutus = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <a
-                  href="#"
+                <p
                   className="ml-1 text-sm font-medium text-gray-700 hover:text-blueloan md:ml-2 dark:text-gray-400 dark:hover:text-white"
                 >
-                  contact
-                </a>
+                 {t('auHead1p')}
+                </p>
               </div>
             </li>
           </ol>
@@ -87,21 +88,16 @@ const aboutus = () => {
       {/* full width card one */}
       <section className=" w-full mx-auto flex flex-col-reverse gap-[40px] md:flex-row my-[30px] ">
         <div className="flex flex-col justify-start w-full">
-          <h1 className="text-[52px]">About us</h1>
+          <h1 className="text-[52px]">{t('auHead1p')}</h1>
           <p className="text-sm py-3 md:w-3/4 leading-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. nisi ut aliquip ex ea commodo
-            consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {t('auContent1p')}
           </p>
           <Link href="/contactus">
             <button
               type="button"
               className="flex gap-2 items-center text-darkgot text-[14px] w-[119px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
             >
-              have a question
+              {t('haveAquestionBtn')}
               <svg
                 width="7"
                 height="11"
@@ -128,26 +124,18 @@ const aboutus = () => {
       </section>
 
       <section className="my-3">
-        <h1 className="text-3xl">Our Mission</h1>
+        <h1 className="text-3xl">{t('auHead2p')}</h1>
         <p className=" text-sm text-darkgot leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-          odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed
-          libero enim sed faucibus. Nisl rhoncus mattis rhoncus urna neque
-          viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum
-          nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo
-          quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus
-          accumsan tortor posuere ac ut consequat semper. Ut eu sem integer
-          vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque.
+          {t('auContent2p')}
         </p>
       </section>
 
       {/* call and contacts */}
       <section className="flex flex-col gap-3">
         <div className="flex flex-col items-center mt-[70px] mb-[40px]">
-          <h1 className="text-3xl">Our Team</h1>
+          <h1 className="text-3xl">{t('auHead3p')}</h1>
           <p className="text-sm py-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           {t('auContent3p')}
           </p>
         </div>
         <section className="w-full flex flex-col gap-[70px] md:flex-row justify-center items-center md:my-9">
@@ -156,12 +144,10 @@ const aboutus = () => {
             <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
               <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-2xl">Sajad Karami</h1>
-            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <h1 className="text-2xl">{t('teamC1Title')}</h1>
+            <p className="text-sm text-dimgot pb-2 ">{t('teamC1Stack')}</p>
             <p className="text-dimgot leading-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam .
+              {t('teamC1Desc')}
             </p>
           </section>
           {/* card end */}
@@ -170,12 +156,10 @@ const aboutus = () => {
             <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
               <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-2xl">Sajad Karami</h1>
-            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <h1 className="text-2xl">{t('teamC2Title')}</h1>
+            <p className="text-sm text-dimgot pb-2 ">{t('teamC2Stack')}</p>
             <p className="text-dimgot text-dimgot leading-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam .
+              {t('teamC2Desc')}
             </p>
           </section>
           {/* card end */}
@@ -184,12 +168,10 @@ const aboutus = () => {
             <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
               <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-2xl">Sajad Karami</h1>
-            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <h1 className="text-2xl">{t('teamC3Title')}</h1>
+            <p className="text-sm text-dimgot pb-2 ">{t('teamC3Stack')}</p>
             <p className=" text-dimgot leading-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam .
+              {t('teamC3Desc')}
             </p>
           </section>
           {/* card end */}
@@ -200,12 +182,10 @@ const aboutus = () => {
             <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
               <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-2xl">Sajad Karami</h1>
-            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <h1 className="text-2xl">{t('teamC4Title')}</h1>
+            <p className="text-sm text-dimgot pb-2 ">{t('teamC4Stack')}</p>
             <p className="text-dimgot leading-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam .
+              {t('teamC4Desc')}
             </p>
           </section>
           {/* card end */}
@@ -214,12 +194,10 @@ const aboutus = () => {
             <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
               <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-2xl">Sajad Karami</h1>
-            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <h1 className="text-2xl">{t('teamC5Title')}</h1>
+            <p className="text-sm text-dimgot pb-2 ">{t('teamC5Stack')}</p>
             <p className="text-dimgot text-dimgot leading-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam .
+              {t('teamC5Desc')}
             </p>
           </section>
           {/* card end */}
@@ -228,12 +206,10 @@ const aboutus = () => {
             <div className="relative overflow-hidden rounded-full rounded-tr-none w-full h-auto max-h-[40%] team-img">
               <img src="/team/2.jpg" width="100%" height="100%" />
             </div>
-            <h1 className="text-2xl">Sajad Karami</h1>
-            <p className="text-sm text-dimgot pb-2 ">Direct manager</p>
+            <h1 className="text-2xl">{t('teamC6Title')}</h1>
+            <p className="text-sm text-dimgot pb-2 ">{t('teamC6Stack')}</p>
             <p className=" text-dimgot leading-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam .
+              {t('teamC6Desc')}
             </p>
           </section>
           {/* card end */}
