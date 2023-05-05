@@ -43,8 +43,6 @@ import { useTranslation } from "react-i18next";
   }, [url]);
 
   const postData = async (url,values) => {
-    console.log('object before send: ',values)
-    console.log('is url correct: ',url)
     try {
       const res = await axios.post(url,
         JSON.stringify(values),

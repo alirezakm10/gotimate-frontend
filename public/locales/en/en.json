@@ -34,6 +34,8 @@
    "notfoundTitle":"404",
    "notfoundSubtitle":"Page not found.",
    "notfoundDescription":"We are developing the product, so it is possible that the page you want will be available after the final realization of the dashboard. please be patient.",
+   
+   
    "0": "success",
    "404": "HTTP Error, 404",
    "400": "HTTP Error, 400",
