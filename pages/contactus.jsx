@@ -121,7 +121,7 @@ const contactus = () => {
           <form onSubmit={formik.handleSubmit} className="flex flex-col gap-3">
             <div className="flex flex-col items-start">
               <h1 className="text-[52px]">{t('cuTitleP')}</h1>
-              <p className="text-sm py-3">
+              <p className="text-sm py-3 leading-8 ">
                 {t('cuSubtitlep')}
               </p>
             </div>

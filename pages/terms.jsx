@@ -84,6 +84,8 @@ const terms = () => {
         <h1 className="text-3xl text-darkgot" >{t('termsTitle')}</h1>
         <p className="text-md text-center leading-8 py-3" >{t('termsSubtitle')}</p>
         </section>
+        <p className='text-dimgot' >Effective date: {t('termsDate')}</p>
+
         {/* these are cards */}
         <section className="my-3" >
             <h1 className="text-lg" >{t('term1Title')}</h1>
@@ -106,6 +108,14 @@ const terms = () => {
         <section className="my-3" >
             <h1 className="text-lg" >{t('term5Title')}</h1>
             <p className=" text-sm text-dimgot leading-8" >{t('term5Content')}</p>
+        </section>
+        <section className="my-3" >
+            <h1 className="text-lg" >{t('term6Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >{t('term6Content')}</p>
+        </section>
+        <section className="my-3" >
+            <h1 className="text-lg" >{t('term7Title')}</h1>
+            <p className=" text-sm text-dimgot leading-8" >{t('term7Content')}</p>
         </section>
     </section>
   )

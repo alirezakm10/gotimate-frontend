@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-redux", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:8.0.5"],\
             ["sharp", "npm:0.32.1"],\
             ["sweetalert2", "npm:11.7.3"],\
+            ["swiper", "npm:9.2.4"],\
             ["tailwindcss", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:3.3.1"],\
             ["yup", "npm:1.1.1"]\
           ],\
@@ -1279,6 +1280,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-redux", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:8.0.5"],\
             ["sharp", "npm:0.32.1"],\
             ["sweetalert2", "npm:11.7.3"],\
+            ["swiper", "npm:9.2.4"],\
             ["tailwindcss", "virtual:f1a5f48c364cfa7be4600b15200796e1e9102ebf46188c0282bdb7e68196a25667081f7d232862542f5a32613df9c5200d0d3a06e80c87f8313710f56fc9930b#npm:3.3.1"],\
             ["yup", "npm:1.1.1"]\
           ],\
@@ -2908,6 +2910,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ssr-window", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/ssr-window-npm-4.0.2-01f9c0151e-df18260092.zip/node_modules/ssr-window/",\
+          "packageDependencies": [\
+            ["ssr-window", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ssri", [\
         ["npm:9.0.1", {\
           "packageLocation": "./.yarn/cache/ssri-npm-9.0.1-33ce27f4f8-fb58f5e46b.zip/node_modules/ssri/",\
@@ -3019,6 +3030,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/sweetalert2-npm-11.7.3-a4695fb1d4-6d31e6b0fb.zip/node_modules/sweetalert2/",\
           "packageDependencies": [\
             ["sweetalert2", "npm:11.7.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["swiper", [\
+        ["npm:9.2.4", {\
+          "packageLocation": "./.yarn/cache/swiper-npm-9.2.4-b53973fa72-09f7d0eb08.zip/node_modules/swiper/",\
+          "packageDependencies": [\
+            ["swiper", "npm:9.2.4"],\
+            ["ssr-window", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

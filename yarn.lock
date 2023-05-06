@@ -1021,6 +1021,7 @@ __metadata:
     react-redux: ^8.0.5
     sharp: ^0.32.1
     sweetalert2: ^11.7.3
+    swiper: ^9.2.4
     tailwindcss: ^3.3.1
     yup: ^1.1.1
   languageName: unknown
@@ -2366,6 +2367,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ssr-window@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "ssr-window@npm:4.0.2"
+  checksum: df182600927f4f3225224cf8c02338ea637c9750519505bbfb9a9236741a2a7ec088386fb948bca7b447b8303d9109e7dc7672e3de041c79ac2a0e03665af7d2
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
@@ -2455,6 +2463,15 @@ __metadata:
   version: 11.7.3
   resolution: "sweetalert2@npm:11.7.3"
   checksum: 6d31e6b0fb7fca21ed34c34be97d23043349d2f1c89005bf370245388b057926cf147c33301ced90ac2fe15bada7d3e4277073b5cc36e6c131a9a6f99525ff5a
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^9.2.4":
+  version: 9.2.4
+  resolution: "swiper@npm:9.2.4"
+  dependencies:
+    ssr-window: ^4.0.2
+  checksum: 09f7d0eb0898c47f4ef048c731b5b9c3d5809c3f82170670864f15d27ba39a4cba65b5231fecf83ae5f09c536ab6d68ac3062f583438314de8e72e9f3392c211
   languageName: node
   linkType: hard
 

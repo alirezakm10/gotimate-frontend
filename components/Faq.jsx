@@ -93,7 +93,7 @@ const Faq = () => {
         <div className="md:w-1/2">
           {faq.accordionData.map((data, index) => {
             return (
-              <AccordionItem
+             index < 4 && <AccordionItem
                 key={index}
                 open={index === open}
                 toggle={() => toggle(index)}

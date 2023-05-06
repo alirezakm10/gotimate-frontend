@@ -37,7 +37,7 @@ const Hero = () => {
             {t('startHereBtn')}
           </button>
           </Link>
-          <Link href={hero.buttons[1].url} >
+          {/* <Link href={hero.buttons[1].url} >
           <button
             type="button"
             className="flex gap-2 items-center text-darkgot text-[14px] w-[119px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
@@ -59,7 +59,7 @@ const Hero = () => {
               />
             </svg>
           </button>
-          </Link>
+          </Link> */}
         </div>
       </section>
 
