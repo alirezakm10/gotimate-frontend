@@ -200,29 +200,25 @@ export const initialData = {
     ],
   },
   buttonsRoute:{
+    login:process.env.loginRoute,
+    signup:process.env.signupRoute,
+    starthere:process.env.signupRoute,
+    learnabout:'',
+    morequestions:'/faq',
+    havequestion:'/contactus',
+    letsstart:process.env.signupRoute,
+    createaccount:process.env.signupRoute,
+    partnership:'/partnership',
+    startwiththis:process.env.signupRoute,
+    about:'/aboutus',
+    contactus:'/contactus',
+    faq:'/faq',
+    privacypolicy:'/privacy',
+    termsconditions:'/terms'
+  },
 
-  },
-  // hero header data object
-  hero: {
-    buttons: [
-      {
-        icon: null,
-        url: "/contact",
-      },
-      {
-        icon: null,
-        url: "/aboutus",
-      },
-    ],
-  },
   // faq data object
   faq: {
-    buttons: [
-      {
-        icon: null,
-        url: '/faq',
-      },
-    ],
     accordionData: [
       {
         question: "q1",
@@ -370,109 +366,19 @@ export const initialData = {
       },
     ],
   },
-  // let's Start data object
-  letsstart: {
 
-    buttons: [
-      {
-        icon: null,
-        url: 'asf',
-      },
-      {
-        icon: null,
-        url: 'asdf',
-      },
-    ],
-  },
   // Business Account data object
   bussiness: {
-    title: "Own a business ?",
-    subTitle: "",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do agna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    buttons: [
-      {
-        title: "Create An Account",
-        icon: null,
-        url: null,
-      },
-      {
-        title: "Partnership conditions",
-        icon: null,
-        url: null,
-      },
-    ],
-    imageData: {
+  imageData: {
       src: "/teamwork.jpg",
       alt: "team work",
     },
   },
   // footer data object
   footer: {
-    excerpt: "Your experiences are valuable!",
-    subscribe: {
-      title: "Subscribe",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-      buttons: [
-        {
-          title: "Subscribe",
-          icon: null,
-          url: null,
-        },
-      ],
-    },
-    helpCenter: {
-      title: "Help Center",
-      links: [
-        {
-          title: "About Us",
-          route: "/test",
-        },
-        {
-          title: "Help",
-          route: "/test",
-        },
-        {
-          title: "New item here",
-          route: "/test",
-        },
-        {
-          title: "Learn About",
-          route: "/test",
-        },
-        {
-          title: "Support",
-          route: "/test",
-        },
-      ],
-    },
-    quickAccess: {
-      title: "Quick Access",
-      links: [
-        {
-          title: "Home",
-          route: "test2",
-        },
-        {
-          title: "About us",
-          route: "test2",
-        },
-        {
-          title: "Contact",
-          route: "test2",
-        },
-        {
-          title: "Partnershop",
-          route: "test2",
-        },
-        {
-          title: "Support",
-          route: "test2",
-        },
-      ],
-    },
+  
     copyright: {
-      title: "2023 Gotimate Platform. All Rights Reserved.",
+      title: "copyrightText",
       sign: true,
     },
   },

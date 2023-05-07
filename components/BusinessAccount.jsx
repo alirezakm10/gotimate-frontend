@@ -1,11 +1,11 @@
 import Image from "next/image";
-import teamwork from "../public/teamwork.jpg";
+import Link from 'next/link'
 import { initialData } from "@/initialData";
 import { useTranslation } from 'react-i18next'
 
 const BusinessAccount = () => {
   const { t } = useTranslation()
-  const { bussiness } = initialData;
+  const { bussiness, buttonsRoute } = initialData;
 
   return (
     <section className="relative my-[100px] py-1">
@@ -51,9 +51,10 @@ const BusinessAccount = () => {
 
           {/* buttons on desktop mode */}
           <div className="hidden md:flex gap-5 justify-start">
+<Link href={buttonsRoute.createaccount} >
             <button
               type="button"
-              className="flex items-center justify-center gap-4 px-5 text-white text-[14px] bg-gotimate w-[200px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+              className="flex items-center justify-center gap-4  text-white text-[14px] bg-gotimate px-5 h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
             >
               <svg
                 width="20"
@@ -70,9 +71,11 @@ const BusinessAccount = () => {
 
              {t('createAccountBtn')}
             </button>
+            </Link>
+<Link href={buttonsRoute.partnership} >
             <button
               type="button"
-              className="flex items-center gap-3 p-2 justify-around text-darkgot text-[14px]  w-auto h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+              className="flex items-center gap-3 px-5 justify-around text-darkgot text-[14px] h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
             >
               {t('partnershipConditionBtn')}
 
@@ -92,6 +95,8 @@ const BusinessAccount = () => {
                 />
               </svg>
             </button>
+            </Link>
+
           </div>
         </div>
 
@@ -101,11 +106,13 @@ const BusinessAccount = () => {
 
         {/* buttons container in mobile mode */}
         <div className="flex md:hidden gap-3 py-5 justify-around">
+        <Link href={buttonsRoute.createaccount} >
           <button
             type="button"
-            className="flex items-center justify-around  text-white text-[14px] bg-gotimate w-[90%] h-[40px] p-2 hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+            className="flex items-center justify-around  text-white text-[14px] bg-gotimate  h-[40px] px-5 hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
           >
             <svg
+            className="mx-1"
               width="20"
               height="21"
               viewBox="0 0 20 21"
@@ -120,9 +127,11 @@ const BusinessAccount = () => {
 
             {t('createAccountBtn')}
           </button>
+          </Link>
+          <Link href={buttonsRoute.partnership} >
           <button
             type="button"
-            className="flex items-center gap-3 justify-around text-darkgot text-[14px]  w-full h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
+            className="flex items-center gap-3 justify-around text-darkgot text-[14px] px-5 w-full h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
           >
             {t('partnershipConditionBtn')}
 
@@ -142,6 +151,7 @@ const BusinessAccount = () => {
               />
             </svg>
           </button>
+          </Link>
         </div>
       </section>
     </section>

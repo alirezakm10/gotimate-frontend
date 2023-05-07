@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 const Hero = () => {
   const { t } = useTranslation()
 
-  const { hero } = initialData
+  const { buttonsRoute } = initialData
 
   
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
           {t('heroHeaderSubtitle')}
         </p>
         <div className="flex gap-7 my-6">
-          <Link href={hero.buttons[0].url} >
+          <Link href={buttonsRoute.starthere} >
           <button
             type="button"
             className="text-white text-[14px] bg-gotimate w-[119px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
@@ -37,7 +37,7 @@ const Hero = () => {
             {t('startHereBtn')}
           </button>
           </Link>
-          {/* <Link href={hero.buttons[1].url} >
+          {/* <Link href={buttonsRoute.learnabout} >
           <button
             type="button"
             className="flex gap-2 items-center text-darkgot text-[14px] w-[119px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"

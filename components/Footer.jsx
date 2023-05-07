@@ -9,6 +9,8 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation()
   const { postData } = useAxios();
+  const { buttonsRoute } = initialData
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -47,7 +49,7 @@ const Footer = () => {
 
         {/* section two */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
-          <h1 className=" text-2xl font-bold">{t('footerSubsTitle')}</h1>
+          <h1 className=" text-2xl font-bold text-darkgot">{t('footerSubsTitle')}</h1>
           <p className="text-gray-500 leading-8 text-sm">{t('footerSubsSubtitle')}</p>
           <form
             onSubmit={formik.handleSubmit}
@@ -127,28 +129,28 @@ const Footer = () => {
 
         {/* section three */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
-          <h1 className=" text-2xl font-bold">{footer.helpCenter.title}</h1>
+          <h1 className=" text-2xl font-bold text-darkgot ">{t('footerHc')}</h1>
           <ul className="text-sm flex flex-col text-gray-500 leading-8">
               <Link
-                href='/'
+                href={buttonsRoute.contactus}
                 className="hover:text-gotimate cursor-pointer"
               >
                {t('contactus')}
               </Link>
               <Link
-                href='/'
+                href={buttonsRoute.faq}
                 className="hover:text-gotimate cursor-pointer"
               >
                {t('faq')}
               </Link>
               <Link
-                href='/'
+                href={buttonsRoute.privacypolicy}
                 className="hover:text-gotimate cursor-pointer"
               >
                {t('privacy&policy')}
               </Link>
               <Link
-                href='/'
+                href={buttonsRoute.termsconditions}
                 className="hover:text-gotimate cursor-pointer"
               >
                {t('terms&conditions')}
@@ -158,7 +160,7 @@ const Footer = () => {
 
         {/* section four */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
-          <h1 className=" text-2xl font-bold">{t('footerQa')}</h1>
+          <h1 className=" text-2xl font-bold text-darkgot">{t('footerQa')}</h1>
           <div className="text-sm flex flex-col text-gray-500 leading-8">
         
               <Link
@@ -168,13 +170,13 @@ const Footer = () => {
                 {t('home')}
               </Link>
               <Link
-                href='/'
+                href={buttonsRoute.about}
                 className="hover:text-gotimate cursor-pointer"
               >
                 {t('about')}
               </Link>
               <Link
-                href='/'
+                href={buttonsRoute.partnership}
                 className="hover:text-gotimate cursor-pointer"
               >
               {t('partnership')}
@@ -187,7 +189,7 @@ const Footer = () => {
       <hr className="text-[14px]x w-[100%] mt-[46px] bg-gray-200 border-0" />
       <p className="text-center mt-4 text-gray-500 text-sm">
         {footer.copyright.sign && <>&copy; </>}
-        {footer.copyright.title}
+        {t(footer.copyright.title)}
       </p>
     </section>
   );

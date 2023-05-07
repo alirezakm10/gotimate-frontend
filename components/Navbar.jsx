@@ -6,19 +6,19 @@ import { useTranslation } from 'react-i18next'
 const Navbar = () => {
   const { t } = useTranslation()
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const { logo, navbar, socialNetworks } = initialData;
+  const { logo, navbar, socialNetworks, buttonsRoute } = initialData;
 
   return (
     <nav className="border-gray-200">
       <div className="overflow-hidden flex flex-wrap items-center justify-between ">
-        <a href="https://gotimate.com/" className="flex items-center">
+        <a href='/' className="flex items-center">
           <div className="h-10  hidden lg:flex">
             {logo}
           </div>
         </a>
         <div className="md:order-2 ">
           <div className="hidden lg:flex">
-            <Link href='https://dashboard.gotimate.com/login' >
+            <Link href={buttonsRoute.login} >
             <button
               type="button"
               className="text-darkgot text-[14px] w-[100px] h-[40px] hover:text-gotimate transition-all rounded-[10px]"
@@ -26,7 +26,7 @@ const Navbar = () => {
               {t('loginBtn')}
             </button>
             </Link>
-            <Link href='https://dahsboard.gotimate.com/signup' >
+            <Link href={buttonsRoute.signup} >
             <button
               type="button"
               className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
@@ -61,7 +61,7 @@ const Navbar = () => {
               </svg>
             </button>
          {logo}
-            <Link href='https://dashboard.gotimate.com'  className="flex items-center stroke-darkgot mr-10" >
+            <Link href={buttonsRoute.login}  className="flex items-center stroke-darkgot mr-10" >
         
               <svg
                 width="25"
@@ -118,7 +118,7 @@ const Navbar = () => {
 
               {/* login signup buttons in mobile menu */}
               <div className="gap-2 flex mx-auto">
-                <Link href='https://dashboard.gotimate.com/signup' >
+                <Link href={buttonsRoute.signup} >
                 <button
                   type="button"
                   className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
@@ -126,7 +126,7 @@ const Navbar = () => {
                   {t('signupBtn')}
                 </button>
                 </Link>
-                <Link href='https://dashboard.gotimate.com/login' >
+                <Link href={buttonsRoute.login} >
                 <button
                   type="button"
                   className="text-darkgot text-[14px] w-[100px] h-[40px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"

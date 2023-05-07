@@ -7,7 +7,7 @@ import usePriceFormat from '@/hooks/usePriceFormat'
 const PlanCard = ({plan}) => {
 const { t } = useTranslation()
 
-    const { popularSvg } = initialData
+    const { popularSvg, buttonsRoute } = initialData
 
   return (
    <section className={`relative flex flex-col text-dimgot p-4 cursor-pointer rounded-[25px] hover:shadow-md hover:shadow-gray-300 transition-all bg-white hover:border-[1px] hover:border-gotimate
@@ -27,7 +27,7 @@ const { t } = useTranslation()
 <div className='text-gotimate py-1 bg-[#fafafa] rounded-full my-1 p-4 font-thin text-sm ' >{t('psPMaxquestion')}: <span className='text-gotimate font-semibold' >{plan.limits.max_questionnaires}</span></div>
 <div className='text-gotimate py-1 bg-[#fafafa] rounded-full my-1 p-4 font-thin text-sm ' >{t('psPMinrewards')}: <span className='text-gotimate font-semibold' >{plan.limits.min_rewards}</span></div>
 
-<Link href='/' >
+<Link href={buttonsRoute.startwiththis} >
 <button className='text-darkgot px-9 py-3 my-8 shadow-md hover:shadow-md hover:text-white bg-white hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[10px]' >{t('psPStarBtn')}</button>
 </Link>
     </section>

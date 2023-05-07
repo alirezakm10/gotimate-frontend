@@ -1,4 +1,4 @@
-import React from "react";
+import Link from 'next/link'
 import Image from 'next/image'
 import trapezium from '../public/trapezium.svg'
 import { initialData } from "@/initialData";
@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 const LetsStart = () => {
   const { t } = useTranslation()
-  const { letsstart } = initialData;
+  const { buttonsRoute } = initialData;
 
   
   return (
@@ -446,6 +446,7 @@ const LetsStart = () => {
          <Image src={trapezium} responsive  className='absolute top-0  right-0 hidden lg:block object-fill' />
          {/* these same buttons is for desktop breakpoints */}
           <div className=" absolute top-[78px] right-[100px] hidden lg:flex gap-3" >
+            <Link href={buttonsRoute.letsstart} >
           <button
             type="button"
             className="flex gap-2 items-center text-white hover:bg-gray-400 px-3 text-[14px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
@@ -467,6 +468,7 @@ const LetsStart = () => {
               />
             </svg>
           </button>
+          </Link>
           <a
           href="#howStart"
             type="button"
@@ -484,6 +486,7 @@ const LetsStart = () => {
               >
                 {t("howtoStartBtn")}
               </a>
+              <Link href={buttonsRoute.letsstart} >
               <button
                 type="button"
                 className="flex gap-2 px-6 items-center text-white hover:bg-gray-400 text-[14px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
@@ -505,6 +508,7 @@ const LetsStart = () => {
                   />
                 </svg>
               </button>
+              </Link>
             </div>
         </div>
       </section>
