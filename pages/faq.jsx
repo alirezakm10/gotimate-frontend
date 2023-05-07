@@ -122,8 +122,7 @@ const faq = () => {
         {/* start of faq details */}
         <div className="flex flex-col text-center w-full items-center my-[30px]">
           <h1 className="text-[52px]">{t('faqTitleP')}</h1>
-          <h2 className="text-3xl py-2 ">{t('faqSubtitleP')}</h2>
-          <p className="text-gray-500  text-center leading-8">{t('faqSubtitle')}</p>
+          <p className="text-gray-500  text-center leading-8">{t('faqSubtitleP')}</p>
           {/* below div is search input div */}
           <div className="relative  w-full md:w-[60%] mt-[30px]">
             <div

@@ -126,7 +126,7 @@ export const initialData = {
   </svg>,
   socialNetworks: {
     facebook: {
-      href: "/enter_your_facebook_link",
+      href: "/#",
       icon: (
         <svg
           width="33"
@@ -143,7 +143,7 @@ export const initialData = {
       ),
     },
     twitter: {
-      href: "/enter_your_twitter_link",
+      href: "/#",
       icon: (
         <svg
           width="34"
@@ -160,7 +160,7 @@ export const initialData = {
       ),
     },
     linkdin: {
-      href: "/enter_your_linkdin_link",
+      href: "/#",
       icon: (
         <svg
           width="33"
@@ -199,6 +199,9 @@ export const initialData = {
       },
     ],
   },
+  buttonsRoute:{
+
+  },
   // hero header data object
   hero: {
     buttons: [
@@ -217,7 +220,7 @@ export const initialData = {
     buttons: [
       {
         icon: null,
-        url: null,
+        url: '/faq',
       },
     ],
     accordionData: [
@@ -369,19 +372,15 @@ export const initialData = {
   },
   // let's Start data object
   letsstart: {
-    title: "Let's Start",
-    content:
-      "Lorem ipsum dolor sit amet, labore et dolore magna aliqua.Lorem ipsum dolor sit amet, labore et dolore magna aliqua.",
+
     buttons: [
       {
-        title: "Let's start",
         icon: null,
-        url: null,
+        url: 'asf',
       },
       {
-        title: "How to start",
         icon: null,
-        url: null,
+        url: 'asdf',
       },
     ],
   },

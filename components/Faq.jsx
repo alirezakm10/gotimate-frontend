@@ -63,7 +63,7 @@ const Faq = () => {
           <p className="text-gray-500 pt-8 pb-4 leading-8">
             {t('faqSubtitleP')}
           </p>
-          <Link href='/faq' >
+          <Link href={faq.buttons[0].url} >
           <button
             type="button"
             className="flex gap-2 items-center text-darkgot text-[14px] w-[157px] h-[40px] stroke-darkgot hover:stroke-gotimate hover:text-gotimate transition-all rounded-[10px]"
