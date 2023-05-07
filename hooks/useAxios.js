@@ -52,6 +52,7 @@ import { useTranslation } from "react-i18next";
         icon: "success",
         title: `Submitted.`,
       });
+      console.log('data is :  ',res)
     } catch (err) {
       Toast.fire({
         icon: "error",

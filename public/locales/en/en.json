@@ -114,6 +114,15 @@
    "a36":"Gotimate guarantees the quality of the market research projects and offers a satisfaction guarantee. If the businesses are not satisfied with the results, we provide revisions and modifications to ensure their satisfaction.",
    "faqUnderBox":"Don't find your answer?",
    "faqBtn":"More questions",
+   
+   "letsStart":"Let's Start",
+   "letsStartContent":"Sign up today to become a valuable member of our community and start earning rewards for your insights!",
+
+
+   "ownBtitle":"",
+   "ownBsubtitle":"",
+   "ownBsubcontent":"",
+
 
    "cuTitleP":"Contact Us",
    "cuSubtitlep":"Have a question or need more information about our platform? Our team is here to help. You can reach us by phone, email, or through our online contact form. We look forward to hearing from you and helping you achieve your market research goals.",
@@ -131,10 +140,10 @@
    "auContent2p":"Our mission is to make market research more efficient, affordable, and accessible to businesses of all sizes. We are committed to providing our clients with the highest quality data and insights, and we work hard to ensure that our platform is easy to use and intuitive.",
    "auHead3p":"Our Team",
    "auContent3p":"Whether you're a small business looking to conduct your first market research study or a large corporation in need of a custom research project, we're here to help. Contact us today to learn more about how our platform can help you achieve your business goals.",
-   "teamC1Title":"Sajad Karami",
+   "teamC1Title":"Sajjad Karami",
    "teamC1Stack":"Founder and BCI Developer",
    "teamC2Title":"S.M. Hadi Khalaghi",
-   "teamC2Stack":"Co-founder and Financial Manager",
+   "teamC2Stack":"Co-founder and Business Manager",
    "teamC3Title":"Armeti Rahmani",
    "teamC3Stack":"Co-founder and Product Manager",
    "teamC4Title":"Alireza Karbalayi",
@@ -147,36 +156,78 @@
    "teamC7Stack":"Content Producer",
 
    
-
-
-
    "termsTitle":"Terms and Conditions",
    "termsSlug":"terms",
    "termsSubtitle":"Welcome to Gotimate. By using our website, mobile application, or other products or services (collectively, the \"Services\"), you agree to these terms and conditions (the \"Terms\").",
    "termsDate":"2023/05/06",
-
    "term1Title":"Use of the Services",
    "term1Content":"You may use our Services only for lawful purposes and in accordance with these Terms. You must not use our Services in any way that violates any applicable federal, state, local, or international law or regulation.",
-
    "term2Title":"Intellectual Property",
    "term2Content":"The Services and their entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio) are owned by Gotimate or its licensors and are protected by copyright, trademark, and other intellectual property or proprietary rights laws.",
-
    "term3Title":"Disclaimer of Warranties",
    "term3Content":"THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR TITLE.",
-
    "term4Title":"Limitation of Liability",
    "term4Content":"IN NO EVENT SHALL GOTIMATE, ITS AFFILIATES, LICENSORS, OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SERVICES.",
-
    "term5Title":"Indemnification",
    "term5Content":"You agree to indemnify, defend, and hold harmless Gotimate, its affiliates, licensors, and service providers from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or in connection with your use of the Services.",
-
    "term6Title":"Governing Law and Jurisdiction",
    "term6Content":"These Terms shall be governed by and construed in accordance with the laws of [COUNTRY]. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of [CITY], [COUNTRY].",
-
    "term7Title":"Changes to the Terms",
    "term7Content":"We may update these Terms from time to time. If we make any material changes to these Terms, we will notify you by email or by posting a notice on our website.",
 
 
+   "privacyTitle":"Privacy Policy",
+   "privacySlug":"privacy",
+   "privacySubtitle":"At Gotimate, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your personal information in connection with your use of our website, mobile application, and other products and services (collectively, the \"Services\").",
+   "privacyDate":"2023/05/06",
+   "privacy1Title":"Information We Collect",
+   "privacy1Content":"We may collect personal information about you, such as your name, email address, mailing address, phone number, or payment information, when you use our Services. We may also collect other information about your use of our Services, such as your IP address, device type, and browser type.",
+   "privacy2Title":"How We Use Your Information",
+   "privacy2Content":"We may use your personal information to provide our Services to you, to communicate with you about our Services, to send you marketing materials or other information, or to respond to your inquiries or requests.",
+   "privacy3Title":"How We Disclose Your Information",
+   "privacy3Content":"We may disclose your personal information to our service providers or partners who provide services to us or on our behalf. We may also disclose your personal information if required by law, such as in response to a subpoena or court order.",
+   "privacy4Title":"Your Choices",
+   "privacy4Content":"You may choose not to provide us with certain personal information, but this may limit your ability to use our Services. You may also opt out of receiving marketing materials from us at any time.",
+   "privacy5Title":"Security",
+   "privacy5Content":"We take reasonable measures to protect your personal information from unauthorized access or disclosure.",
+   "privacy6Title":"Changes to this Privacy Policy",
+   "privacy6Content":"We may update this Privacy Policy from time to time. If we make any material changes to this Privacy Policy, we will notify you by email or by posting a notice on our website.",
+
+   "psTitle":"Partnership",
+   "psSubtitle":"Make the most informed decision you'll ever make",
+   "psCFree":"free",
+   "psCGtmtoken":"GTM Token",
+   "psChead":"For Business account",
+   "psCContent":"Welcome to our blockchain-powered market research platform. We help businesses of all sizes and industries gather valuable insights and make data-driven decisions.",
+   "psAboutprocessHead":"About Services",
+   "psAboutprocessContent":"Our platform allows businesses to connect with a global pool of qualified respondents who are willing to share their opinions and insights in exchange for rewards.Our blockchain technology ensures that all data collected is accurate, reliable, and tamper-proof.",
+   
+   "psGC1number":"1",
+   "psGC1title":"Create an Account",
+   "psGC1Content":"visit our website and complete the registration form.",
+   "psGC2number":"2",
+   "psGC2title":"Get Consumer Access",
+   "psGC2Content":"Update your profile and get more access.",
+   "psGC3number":"3",
+   "psGC3title":"Use the Insight Gained",
+   "psGC3Content":"Collect and process the data of your future customers.",
+   
+   
+   
+   "psPPerproject":"Per project",
+   "psPMaxquestion":"Max questionaries",
+   "psPMinrewards":"Min rewards",
+   "psPStarBtn":"Start with this",
+   "psPMaxquestionary":"Max questtions",
+   "psPExpiretime":"Expire time (days)",
+   "psPEasypresentation":"Easy presentation",
+   "psPRealtimereport":"Realtime report",
+   "psPSmartvalidation":"Smart validation",
+   "psPSpecifictarget":"Specific target",
+
+
+   "psABtitle":"Let's Start",
+   "psABcontent":"Join our platform today and start gathering insights that will help you grow your business and stay ahead of the competition.",
 
 
    "0": "success",

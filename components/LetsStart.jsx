@@ -2,8 +2,10 @@ import React from "react";
 import Image from 'next/image'
 import trapezium from '../public/trapezium.svg'
 import { initialData } from "@/initialData";
+import { useTranslation } from 'react-i18next'
 
 const LetsStart = () => {
+  const { t } = useTranslation()
   const { letsstart } = initialData;
 
   
@@ -435,8 +437,8 @@ const LetsStart = () => {
 
       <section className="relative flex flex-col lg:flex-row lg:justify-between my-9 min-h-[211px]    bg-white shadow-md rounded-[50px] md:rounded-[75px] ">
         <div className="lg:px-[60px] py-6 lg:leading-8  text-center lg:text-left flex gap-5 flex-1 flex-col justify-center">
-          <h1 className="  text-3xl text-[#1F2D3D]">{letsstart.title}</h1>
-          <p className="text-gray-500 px-2 leading-8 lg:w-auto">{letsstart.content}</p>
+          <h1 className="  text-3xl px-2 text-[#1F2D3D]">{t('letsStart')}</h1>
+          <p className="text-gray-500 px-2 leading-8 lg:w-auto">{t('letsStartContent')}</p>
         </div>
 
 
@@ -446,9 +448,9 @@ const LetsStart = () => {
           <div className=" absolute top-[78px] right-[100px] hidden lg:flex gap-3" >
           <button
             type="button"
-            className="flex gap-2 items-center text-white hover:bg-gray-400 px-3 text-[14px] w-[123px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
+            className="flex gap-2 items-center text-white hover:bg-gray-400 px-3 text-[14px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
           >
-            {letsstart.buttons[0].title}
+            {t('letsStartBtn')}
             <svg
               width="7"
               height="11"
@@ -465,42 +467,45 @@ const LetsStart = () => {
               />
             </svg>
           </button>
-          <button
+          <a
+          href="#howStart"
             type="button"
-            className="text-darkgot text-[14px] hover:text-white bg-white w-[153px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
+            className="text-darkgot text-[14px] flex justify-center items-center hover:text-white bg-white w-[153px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
           >
-             {letsstart.buttons[1].title}
-          </button>
+             {t("howtoStartBtn")}
+          </a>
           </div>
           {/* these buttons is for mobile break point */}
-          <div className="flex gap-3 bg-gotimate lg:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]" >
-          <button
-            type="button"
-            className="text-darkgot text-[14px] bg-white w-[123px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
-          >{letsstart.buttons[0].title}</button>
-          <button
-            type="button"
-            className="flex gap-2 items-center text-white hover:bg-gray-400 px-1 text-[14px] w-[123px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
-          >
-              {letsstart.buttons[1].title}
-            <svg
-              width="7"
-              height="11"
-              viewBox="0 0 7 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.625 1.125L6 5.5L1.625 9.875"
-                stroke="inherit"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-        
-          </div>
+          <div className="flex gap-3 bg-gotimate lg:hidden justify-center items-center w-[90%] mx-auto my-5 h-[117px] rounded-[75px]">
+              <a
+                href="#howStart"
+                type="button"
+                className="text-darkgot text-[14px] flex justify-center items-center bg-white w-[123px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none  font-medium rounded-[30px]"
+              >
+                {t("howtoStartBtn")}
+              </a>
+              <button
+                type="button"
+                className="flex gap-2 px-6 items-center text-white hover:bg-gray-400 text-[14px] h-[40px] stroke-white hover:stroke-white hover:text-white transition-all rounded-[30px]"
+              >
+                {t("letsStartBtn")}
+                <svg
+                  width="7"
+                  height="11"
+                  viewBox="0 0 7 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.625 1.125L6 5.5L1.625 9.875"
+                    stroke="inherit"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
         </div>
       </section>
     </section>

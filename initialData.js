@@ -53,23 +53,6 @@ export const initialData = {
       />
     </svg>
   ),
-  tick: (
-    <svg
-      width="25"
-      height="24"
-      viewBox="0 0 25 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M5.25 13L9.25 17L19.25 7"
-        stroke="#05697E"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  ),
   popularSvg:<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clip-path="url(#clip0_513_4049)">
   <path d="M105.022 123.877C104.603 126.024 97.763 127.582 97.763 127.582L97.6032 101.982L104.887 102.027L105.022 123.877Z" fill="#05697E"/>

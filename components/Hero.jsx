@@ -64,7 +64,7 @@ const Hero = () => {
       </section>
 
       {/* cards container */}
-      <section className="relative overflow-hidden rounded-3xl h-auto  md:flex items-center justify-center md:h-[350px] hero-pic ">
+      <section id="howStart" className="relative overflow-hidden rounded-3xl h-auto  md:flex items-center justify-center md:h-[350px] hero-pic ">
         
         <div className="absolute w-full h-full hero-partial " ></div>
         {/* card */}

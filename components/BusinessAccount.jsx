@@ -1,9 +1,10 @@
-import React from "react";
 import Image from "next/image";
 import teamwork from "../public/teamwork.jpg";
 import { initialData } from "@/initialData";
+import { useTranslation } from 'react-i18next'
 
 const BusinessAccount = () => {
+  const { t } = useTranslation()
   const { bussiness } = initialData;
 
   return (
@@ -67,13 +68,13 @@ const BusinessAccount = () => {
                 />
               </svg>
 
-              {bussiness.buttons[0].title}
+             {t('createAccountBtn')}
             </button>
             <button
               type="button"
               className="flex items-center gap-3 p-2 justify-around text-darkgot text-[14px]  w-auto h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
             >
-              {bussiness.buttons[1].title}
+              {t('partnershipConditionBtn')}
 
               <svg
                 width="10"
@@ -117,13 +118,13 @@ const BusinessAccount = () => {
               />
             </svg>
 
-            {bussiness.buttons[0].title}
+            {t('createAccountBtn')}
           </button>
           <button
             type="button"
             className="flex items-center gap-3 justify-around text-darkgot text-[14px]  w-full h-[40px] hover:text-white stroke-darkgot hover:stroke-white hover:bg-gray-400 transition-all  focus:outline-none  rounded-[30px]"
           >
-            {bussiness.buttons[1].title}
+            {t('partnershipConditionBtn')}
 
             <svg
               width="7"

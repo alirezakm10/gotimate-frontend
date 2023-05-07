@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useTranslation } from 'react-i18next'
 
 const privacy = () => {
+  const { t } = useTranslation()
+
   return (
     <section className="flex flex-col justify-center py-3 text-darkgot">
       <section className="blured-headpage">
@@ -50,7 +53,7 @@ const privacy = () => {
                     />
                   </g>
                 </svg>
-                Home
+                {t('home')}
               </Link>
             </li>
             <li>
@@ -69,10 +72,9 @@ const privacy = () => {
                   ></path>
                 </svg>
                 <p
-                  href="#"
                   className="ml-1 text-sm font-medium text-gray-700 hover:text-blueloan md:ml-2 dark:text-gray-400 dark:hover:text-white"
                 >
-                  Privacy
+                  {t('privacySlug')}
                 </p>
               </div>
             </li>
@@ -80,89 +82,48 @@ const privacy = () => {
         </nav>
       </section>
       <section className="flex flex-col items-center justify-center my-[30px]">
-        <h1 className="text-3xl text-darkgot">Privacy policy</h1>
+        <h1 className="text-3xl text-darkgot">{t('privacyTitle')}</h1>
         <p className="text-md text-center leading-8 py-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt .
+          {t('privacySubtitle')}
         </p>
       </section>
+      <p className='text-dimgot' >Effective date: {t('privacyDate')}</p>
+
       {/* these are cards */}
       <section className="my-3">
-        <h1 className="text-lg">1. Title one about something</h1>
+        <h1 className="text-lg">{t('privacy1Title')}</h1>
         <p className=" text-sm text-dimgot leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-          odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed
-          libero enim sed faucibus. Nisl rhoncus mattis rhoncus urna neque
-          viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum
-          nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo
-          quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus
-          accumsan tortor posuere ac ut consequat semper. Ut eu sem integer
-          vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque.
+          {t('privacy1Content')}
         </p>
       </section>
       <section className="my-3">
-        <h1 className="text-lg">2. Title one about something</h1>
+        <h1 className="text-lg">{t('privacy2Title')}</h1>
         <p className=" text-sm text-dimgot leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-          odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed
-          libero enim sed faucibus. Nisl rhoncus mattis rhoncus urna neque
-          viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum
-          nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo
-          quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus
-          accumsan tortor posuere ac ut consequat semper. Ut eu sem integer
-          vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque
-          lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit
-          amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id
-          semper. Lacus luctus accumsan tortor posuere ac ut consequat semper.
-          Ut eu sem integer vitae justo eget magna fermentum. In hendrerit
-          gravida rutrum quisque
+          {t('privacy2Content')}
         </p>
       </section>
       <section className="my-3">
-        <h1 className="text-lg">3. Title one about something</h1>
+        <h1 className="text-lg">{t('privacy3Title')}</h1>
         <p className=" text-sm text-dimgot leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-          odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed
-          libero enim sed faucibus. Nisl rhoncus mattis rhoncus urna neque
-          viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum
-          nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo
-          quis imperdiet.
+          {t('privacy3Content')}
         </p>
       </section>
       <section className="my-3">
-        <h1 className="text-lg">4. Title one about something</h1>
+        <h1 className="text-lg">{t('privacy4Title')}</h1>
         <p className=" text-sm text-dimgot leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-          odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed
-          libero enim sed faucibus. Nisl rhoncus mattis rhoncus urna neque
-          viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum
-          nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo
-          quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus
-          accumsan tortor posuere ac ut consequat semper. Ut eu sem integer
-          vitae justo eget magna fermentum. In hendrerit gravida rutrum quisque
-          lobortis elementum nibh. Lobortis mattis aliquam faucibus purus. Sit
-          amet mauris commodo quis imperdiet. Nisl purus in mollis nunc sed id
-          semper. Lacus luctus accumsan tortor posuere ac ut consequat semper.
-          Ut eu sem integer vitae justo eget magna fermentum. In hendrerit
-          gravida rutrum quisque
+          {t('privacy4Content')}
         </p>
       </section>
       <section className="my-3">
-        <h1 className="text-lg">5. Title one about something</h1>
+        <h1 className="text-lg">{t('privacy5Title')}</h1>
         <p className=" text-sm text-dimgot leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
-          odio facilisis mauris sit amet massa. Dui sapien eget mi proin sed
-          libero enim sed faucibus. Nisl rhoncus mattis rhoncus urna neque
-          viverra. Amet facilisis magna etiam tempor orci eu lobortis elementum
-          nibh. Lobortis mattis aliquam faucibus purus. Sit amet mauris commodo
-          quis imperdiet. Nisl purus in mollis nunc sed id semper. Lacus luctus
-          accumsan tortor posuere ac ut consequat semper. Ut eu sem integer
-          vitae justo eget magna fermentum.
+          {t('privacy5Content')}
+        </p>
+      </section>
+      <section className="my-3">
+        <h1 className="text-lg">{t('privacy6Title')}</h1>
+        <p className=" text-sm text-dimgot leading-8">
+          {t('privacy6Content')}
         </p>
       </section>
     </section>
