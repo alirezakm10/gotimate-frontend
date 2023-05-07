@@ -20,7 +20,7 @@ const { t } = useTranslation()
     <p className='text-[#5A595F] text-sm' >{plan.description}</p>
 
     <section className='flex flex-col items-center' >
-    <div className='text-3xl text-darkgot mt-8' >{usePriceFormat(plan.price)} { typeof plan.price === "number" && <span className='text-dimgot' >GTM</span>}</div>
+    <div className='text-3xl text-darkgot mt-8' >{usePriceFormat(plan.price)} { typeof plan.price === "number" && <span className='text-dimgot text-sm ' >GTM</span>}</div>
 
 <div className='text-[16px] my-4' >(10$) <span className='text-[12px]' >{t('psPPerproject')}</span></div>
 

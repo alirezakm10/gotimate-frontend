@@ -12,7 +12,15 @@
    "subscribeBtn":"Subscribe",
    "submitBtn":"Submit",
    "haveAquestionBtn":"Have a question",
+
   "home":"Home",
+  "about":"About",
+  "faq":"Faq",
+  "terms&conditions":"Terms & Conditions",
+  "privacy&policy":"Privacy & Policy",
+  "contactus":"Contact Us",
+  "partnership":"Partnership",
+
   "emailText":"Email",
   "emailAddress":"contact@gotimate.com",
   "phoneText":"Phone",
@@ -35,7 +43,7 @@
   "herocardThreeContent":"Complete the project requirements Receive payment for your completed project.",
 
   "faqTitleP":"FAQ",
-  "faqSubtitleP":"All of the answers are here",
+  "faqSubtitleP":"We are committed to providing a seamless and user-friendly experience for all respondents on our platform. If you have any questions or concerns, please do not hesitate to reach out to our customer support team.",
   "landingFaqTitle":"FAQ",
   "landingFaqSubtitle":"Question?",
    "faqSubtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -119,10 +127,21 @@
    "letsStartContent":"Sign up today to become a valuable member of our community and start earning rewards for your insights!",
 
 
-   "ownBtitle":"",
-   "ownBsubtitle":"",
-   "ownBsubcontent":"",
+   "ownBtitle":"Have a Business!",
+   "ownBsubtitle":"Make the most informed decision you'll ever make.",
+   "ownBsubcontent":"Our platform allows businesses to connect with a global pool of qualified respondents who are willing to share their opinions and insights in exchange for rewards.",
 
+
+
+
+   "footerUnderLogo":"you can be a part of shaping the products and services of the future",
+"footerSubsTitle":"Subscribe",
+"footerSubsSubtitle":"Join our community today and be the first to know!",
+"footerSubsPlaceholder":"Enter your email",
+
+   "footerHc":"Help Center",
+   "footerQa":"Quick Access",
+  
 
    "cuTitleP":"Contact Us",
    "cuSubtitlep":"Have a question or need more information about our platform? Our team is here to help. You can reach us by phone, email, or through our online contact form. We look forward to hearing from you and helping you achieve your market research goals.",

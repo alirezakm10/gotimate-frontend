@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { initialData } from "@/initialData";
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
+  const { t } = useTranslation()
   const [isNavOpen, setIsNavOpen] = useState(false);
   const { logo, navbar, socialNetworks } = initialData;
 
@@ -21,7 +23,7 @@ const Navbar = () => {
               type="button"
               className="text-darkgot text-[14px] w-[100px] h-[40px] hover:text-gotimate transition-all rounded-[10px]"
             >
-              Login
+              {t('loginBtn')}
             </button>
             </Link>
             <Link href='https://dahsboard.gotimate.com/signup' >
@@ -29,7 +31,7 @@ const Navbar = () => {
               type="button"
               className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
             >
-              Sign up
+             {t('signupBtn')}
             </button>
             </Link>
           </div>
@@ -121,7 +123,7 @@ const Navbar = () => {
                   type="button"
                   className="text-white text-[14px] bg-gotimate w-[100px] h-[40px] hover:bg-gray-400 transition-all  focus:outline-none rounded-[10px]"
                 >
-                  Sign up
+                  {t('signupBtn')}
                 </button>
                 </Link>
                 <Link href='https://dashboard.gotimate.com/login' >
@@ -129,14 +131,14 @@ const Navbar = () => {
                   type="button"
                   className="text-darkgot text-[14px] w-[100px] h-[40px] shadow-sm hover:text-gotimate transition-all rounded-[10px]"
                 >
-                  Login
+                  {t('loginBtn')}
                 </button>
                 </Link>
               </div>
 
               <ul className="MENU-LINK-MOBILE-OPEN text-lg font-light text-gray-800 flex flex-col gap-8 items-start justify-around min-h-[250px] w-full">
                 {navbar.links.map((link, i) => (
-                  <Link onClick={() => setIsNavOpen(false)} key={i} href={link.route} className="hover:text-gotimate" >{link.title}</Link>
+                  <Link onClick={() => setIsNavOpen(false)} key={i} href={link.route} className="hover:text-gotimate" >{t(link.title)}</Link>
                 ))}
               </ul>
               <div className="flex flex-col items-center gap-3 absolute bottom-[100px] left-0 right-0">
@@ -168,7 +170,7 @@ const Navbar = () => {
                 className="block custom-visited py-2 pl-3 pr-4 text-[#1F2D3D] hover:text-gotimate rounded md:bg-transparent focus:text-gotimate md:p-0 "
                 aria-current="page"
               >
-                {link.title}
+                {t(link.title)}
               </Link>
              ))}
           </div>

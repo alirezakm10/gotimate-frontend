@@ -44,10 +44,10 @@ const BusinessAccount = () => {
       <section className="flex flex-col md:flex-row h-auto gap-3">
         <div className="flex md:w-1/2 flex-col gap-[30px]">
           <h1 className=" text-5xl md:text-6xl text-[#1F2D3D] py-4 font-bold">
-          {bussiness.title}
+          {t('ownBtitle')}
           </h1>
-          <h2 className="text-2xl md:text-3xl text-[#1F2D3D]  leading-8 font-bold">Create A business Account with<span className="text-cyan-800"> 0$</span></h2>
-          <p className="text-gray-500 leading-8 ">{bussiness.answer}</p>
+          <h2 className="text-2xl md:text-3xl text-[#1F2D3D]  leading-8 font-bold">{t('ownBsubtitle')}</h2>
+          <p className="text-gray-500 leading-8 ">{t('ownBsubcontent')}</p>
 
           {/* buttons on desktop mode */}
           <div className="hidden md:flex gap-5 justify-start">

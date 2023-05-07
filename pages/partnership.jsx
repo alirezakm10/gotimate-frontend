@@ -29,7 +29,7 @@ import { useAxios } from "@/hooks/useAxios";
 //   }
 // }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   try {
     const response = await axios.post(
       'http://gotimate.com/api/projects/plans',

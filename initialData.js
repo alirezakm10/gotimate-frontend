@@ -182,19 +182,19 @@ export const initialData = {
   navbar: {
     links: [
       {
-        title: "Home",
+        title: "home",
         route: "/",
       },
       {
-        title: "Partnership",
+        title: "partnership",
         route: "/partnership",
       },
       {
-        title: "About",
+        title: "about",
         route: "/aboutus",
       },
       {
-        title: "Contact Us",
+        title: "contactus",
         route: "/contactus",
       },
     ],

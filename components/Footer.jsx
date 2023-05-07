@@ -4,8 +4,10 @@ import { initialData } from "@/initialData";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useAxios } from "@/hooks/useAxios";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation()
   const { postData } = useAxios();
   const formik = useFormik({
     initialValues: {
@@ -29,7 +31,7 @@ const Footer = () => {
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-5 ">
           <Link href="/">{logo}</Link>
 
-          <p className="text-gray-500 leading-8 text-sm ">{footer.excerpt}</p>
+          <p className="text-gray-500 leading-8 text-sm ">{t('footerUnderLogo')}</p>
           <div className="flex gap-3">
             <Link href={socialNetworks.facebook.href}>
               {socialNetworks.facebook.icon}
@@ -45,8 +47,8 @@ const Footer = () => {
 
         {/* section two */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
-          <h1 className=" text-2xl font-bold">{footer.subscribe.title}</h1>
-          <p className="text-gray-500 leading-8 text-sm">{footer.subscribe.content}</p>
+          <h1 className=" text-2xl font-bold">{t('footerSubsTitle')}</h1>
+          <p className="text-gray-500 leading-8 text-sm">{t('footerSubsSubtitle')}</p>
           <form
             onSubmit={formik.handleSubmit}
             className="flex flex-col items-center"
@@ -104,7 +106,7 @@ const Footer = () => {
                     py-2
                     focus:outline-none focus:border-blue-400
                   "
-                placeholder="Enter your email"
+                placeholder={t('footerSubsPlaceholder')}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
@@ -118,7 +120,7 @@ const Footer = () => {
               className="bg-[#1F2D3D] hover:bg-cyan-800 w-[80%] md:w-[247px]  h-[40px] rounded-[10px] transition-all  text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              {footer.subscribe.buttons[0].title}
+              {t('subscribeBtn')}
             </button>
           </form>
         </div>
@@ -127,31 +129,58 @@ const Footer = () => {
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
           <h1 className=" text-2xl font-bold">{footer.helpCenter.title}</h1>
           <ul className="text-sm flex flex-col text-gray-500 leading-8">
-            {footer.helpCenter.links.map((link, i) => (
               <Link
-                key={i}
-                href={link.route}
+                href='/'
                 className="hover:text-gotimate cursor-pointer"
               >
-                {link.title}
+               {t('contactus')}
               </Link>
-            ))}
+              <Link
+                href='/'
+                className="hover:text-gotimate cursor-pointer"
+              >
+               {t('faq')}
+              </Link>
+              <Link
+                href='/'
+                className="hover:text-gotimate cursor-pointer"
+              >
+               {t('privacy&policy')}
+              </Link>
+              <Link
+                href='/'
+                className="hover:text-gotimate cursor-pointer"
+              >
+               {t('terms&conditions')}
+              </Link>
           </ul>
         </div>
 
         {/* section four */}
         <div className="md:w-1/6 flex flex-col items-center md:items-start text-center md:text-start gap-2 mt-6 md:mt-0">
-          <h1 className=" text-2xl font-bold">{footer.quickAccess.title}</h1>
+          <h1 className=" text-2xl font-bold">{t('footerQa')}</h1>
           <div className="text-sm flex flex-col text-gray-500 leading-8">
-            {footer.quickAccess.links.map((link, i) => (
+        
               <Link
-                key={i}
-                href={link.route}
+                href='/'
                 className="hover:text-gotimate cursor-pointer"
               >
-                {link.title}
+                {t('home')}
               </Link>
-            ))}
+              <Link
+                href='/'
+                className="hover:text-gotimate cursor-pointer"
+              >
+                {t('about')}
+              </Link>
+              <Link
+                href='/'
+                className="hover:text-gotimate cursor-pointer"
+              >
+              {t('partnership')}
+              </Link>
+              
+     
           </div>
         </div>
       </section>

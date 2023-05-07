@@ -79,7 +79,7 @@ const Hero = () => {
               </svg>
             </span>
           </div>
-          <p className="text-gray-200 leading-8 ">{t('herocardOneContent')}</p>
+          <p className="text-gray-200 leading-8 w-3/4 ">{t('herocardOneContent')}</p>
         </div>
 
         <div className="relative flex flex-col justify-center p-8 mb-10 md:mb-0">
@@ -92,7 +92,7 @@ const Hero = () => {
               </svg>
             </span>
           </div>
-          <p className="text-gray-200 leading-8 ">{t('herocardTwoContent')}</p>
+          <p className="text-gray-200 leading-8 w-3/4 ">{t('herocardTwoContent')}</p>
         </div>
 
         <div className="relative flex flex-col justify-center p-8 mb-10 md:mb-0">
@@ -103,7 +103,7 @@ const Hero = () => {
             
             </span>
           </div>
-          <p className="text-gray-200 leading-8 ">{t('herocardThreeContent')}</p>
+          <p className="text-gray-200 leading-8 w-3/4 ">{t('herocardThreeContent')}</p>
         </div>
     
 
