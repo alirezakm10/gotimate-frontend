@@ -131,7 +131,7 @@ const partnership = ({plans}) => {
         </div>
       </section>
       {/* section 2 */}
-      <section className="relative my-[100px] py-1">
+      <section className="relative mt-[100px] mb-[10px] py-1">
         {/* about process section */}
         <section className="flex flex-col">
           {/* top section */}
@@ -271,7 +271,7 @@ const partnership = ({plans}) => {
             clickable: true,
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          className="plansCardSwiper"
         >
           {Object.values(plans).map((plan, index) => (
             <SwiperSlide key="index">

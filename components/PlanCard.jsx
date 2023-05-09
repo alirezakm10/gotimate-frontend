@@ -22,7 +22,7 @@ const { t } = useTranslation()
     <section className='flex flex-col items-center' >
     <div className='text-3xl text-darkgot mt-8' >{usePriceFormat(plan.price)} { typeof plan.price === "number" && <span className='text-dimgot text-sm ' >GTM</span>}</div>
 
-<div className='text-[16px] my-4' >(10$) <span className='text-[12px]' >{t('psPPerproject')}</span></div>
+<div className='text-[16px] my-4' >({plan.usdPrice}) <span className='text-[12px]' >{t('psPPerproject')}</span></div>
 
 <div className='text-gotimate py-1 bg-[#fafafa] rounded-full my-1 p-4 font-thin text-sm ' >{t('psPMaxquestion')}: <span className='text-gotimate font-semibold' >{plan.limits.max_questionnaires}</span></div>
 <div className='text-gotimate py-1 bg-[#fafafa] rounded-full my-1 p-4 font-thin text-sm ' >{t('psPMinrewards')}: <span className='text-gotimate font-semibold' >{plan.limits.min_rewards}</span></div>
